@@ -1,0 +1,149 @@
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  position: relative;
+  font-family: 'Space Grotesk', sans-serif;;
+}
+
+body:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #2a5555;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+video.bg-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 0;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  body {
+    background: url("../assets/img/bg-mobile-fallback.jpg") #c9901e no-repeat center center scroll;
+    background-size: cover;
+  }
+  body video {
+    display: none;
+  }
+}
+
+.masthead {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.masthead:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin-right: 0;
+  background-color: #222831;
+}
+.masthead .masthead-content {
+  position: relative;
+  max-width: 40rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-left: 9rem;
+  color: #EEEEEE;
+}
+.masthead .masthead-content h1, .masthead .masthead-content .h1 {
+  font-size: 2.5rem;
+}
+.masthead .masthead-content p {
+  font-size: 1.2rem;
+}
+.masthead .masthead-content p strong {
+  font-weight: 700;
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100%;
+    width: 75vw;
+    min-height: 0;
+    padding-bottom: 0;
+  }
+  .masthead:before {
+    transform: skewX(-9deg);
+    transform-origin: top right;
+  }
+  .masthead .masthead-content {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 2rem;
+    padding-right: 9rem;
+    margin-left: 6rem;
+  }
+  .masthead .masthead-content h1, .masthead .masthead-content .h1 {
+    font-size: 3.5rem;
+  }
+  .masthead .masthead-content p {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .masthead {
+    width: 65vw;
+  }
+}
+.social-icons {
+  position: relative;
+  z-index: 2;
+}
+.social-icons .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100rem;
+}
+
+@media (min-width: 992px) {
+  .masthead .masthead-content {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 2rem;
+    padding-right: 9rem;
+    margin-left: 3rem;
+  }
+}
+
+@media (min-width: 300px) {
+  .masthead .masthead-content {
+    padding-bottom: 0;
+    padding-left: 2rem;
+    padding-right: 5rem;
+    margin-left: 3rem;
+  }
+}
+video>source{
+  position: absolute;
+  left: 200px;
+}
