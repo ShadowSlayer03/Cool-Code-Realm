@@ -516,7 +516,7 @@ html{
     text-transform: uppercase;
     background-image: linear-gradient(to right,#0a4d68d0,#088295c9);
     display: inline-block;
-    -webkit-background-clip: text;
+    --webkit-background-clip: text;
     color: transparent;
     letter-spacing: 2px;
     transition: all .2s;
@@ -544,7 +544,7 @@ html{
         font-weight: 700;
         text-transform: uppercase;
         background-image: linear-gradient(to right,$color-light,#d3d2d2);
-        -webkit-background-clip: text;
+        --webkit-background-clip: text;
         color: transparent;
         display: inline-block;
         letter-spacing: 2px;
@@ -864,10 +864,10 @@ html{
 
         //MEDIA QUERIES
 
-        &-front
-        {
-            // background-color: orangered;
-        }
+        // &-front
+        // {
+        //     // background-color: orangered;
+        // }
 
         &-back
         {
