@@ -1,0 +1,225 @@
+code[class*="language-"],
+ pre[class*="language-"] {
+     font-family: monospace;
+     font-size: inherit;
+     hyphens: none;
+     line-height: 1.6;
+     color: #d6deeb;
+     text-align: left;
+     word-break: normal;
+     word-wrap: normal;
+     tab-size: 4;
+     tab-size: 4;
+     tab-size: 4;
+     white-space: pre;
+     word-spacing: normal;
+     -webkit-font-smoothing: auto;
+     border-radius: 20px;
+ }
+
+
+ pre[class*="language-"]::selection,
+ pre[class*="language-"] ::selection,
+ code[class*="language-"]::selection,
+ code[class*="language-"] ::selection {
+     text-shadow: none;
+     background: rgb(29 59 83 / 99%);
+ }
+ 
+ pre[class*="language-"]::selection,
+ pre[class*="language-"] ::selection,
+ code[class*="language-"]::selection,
+ code[class*="language-"] ::selection {
+     text-shadow: none;
+     background: rgb(29 59 83 / 99%);
+ }
+ 
+ @media print {
+     code[class*="language-"],
+     pre[class*="language-"] {
+         text-shadow: none;
+     }
+ }
+ 
+ /* Code blocks */
+pre[class*="language-"] {
+    padding: 25px;
+    margin-top: 3.2vmin;
+    overflow: auto;
+}
+
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+    color: white;
+    background: #011627;
+}
+
+:not(pre) > code[class*="language-"] {
+    padding: 0.1em;
+    white-space: normal;
+    border-radius: 0.3em;
+}
+ 
+ .token.comment,
+ .token.prolog,
+ .token.cdata {
+     font-style: italic;
+     color: rgb(99 119 119);
+ }
+ 
+ .token.punctuation {
+     color: rgb(199 146 234);
+ }
+ 
+ .namespace {
+     color: rgb(178 204 214);
+ }
+ 
+ .token.deleted {
+     font-style: italic;
+     color: rgb(239 83 80 / 56%);
+ }
+ 
+ .token.symbol,
+ .token.property {
+     color: rgb(128 203 196);
+ }
+ 
+ .token.tag,
+ .token.operator,
+ .token.keyword {
+     color: rgb(127 219 202);
+ }
+ 
+ .token.boolean {
+     color: rgb(255 88 116);
+ }
+ 
+ .token.number {
+     color: rgb(247 140 108);
+ }
+ 
+ .token.constant,
+ .token.function,
+ .token.builtin,
+ .token.char {
+     color: rgb(130 170 255);
+ }
+ 
+ .token.selector,
+ .token.doctype {
+     font-style: italic;
+     color: rgb(199 146 234);
+ }
+ 
+ .token.attr-name,
+ .token.inserted {
+     font-style: italic;
+     color: rgb(173 219 103);
+ }
+ 
+ .token.string,
+ .token.url,
+ .token.entity,
+ .language-css .token.string,
+ .style .token.string {
+     color: rgb(173 219 103);
+ }
+ 
+ .token.class-name,
+ .token.atrule,
+ .token.attr-value {
+     color: rgb(255 203 139);
+ }
+ 
+ .token.regex,
+ .token.important,
+ .token.variable {
+     color: rgb(214 222 235);
+ }
+ 
+ .token.important,
+ .token.bold {
+     font-weight: 700;
+ }
+ 
+ .token.italic {
+     font-style: italic;
+ }
+ 
+/* Custom styles for theme */
+.code-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.code-wrapper > pre[class*="language-"] {
+    margin-top: 0;
+}
+
+div.code-toolbar {
+    position: relative;
+}
+
+div.code-toolbar > .toolbar {
+    position: absolute;
+    z-index: 10;
+    top: .6em;
+    right: .2em;
+    transition: opacity .3s ease-in-out;
+    opacity: 1;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item {
+    display: inline-block;
+}
+
+/* icon copy */
+div.code-toolbar > .toolbar > .toolbar-item > button {
+    background-color: #e6caa8;
+    border: none;
+    color: #ffffff;
+    padding: 5px 5px 0px 10px;
+    margin-right: 5px;
+    position: relative;
+    cursor: pointer; /* Add cursor pointer to indicate interactivity */
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > button > span {
+    color: #ffffff;
+}
+
+/* hide icon copy */
+div.code-toolbar > .toolbar > .toolbar-item > button[data-copy-state=copy-success] > span,
+div.code-toolbar > .toolbar > .toolbar-item > button[data-copy-state=copy-success]:hover > span {
+    mask-image: none;
+}
+
+/* color of "Copied!" */
+.copy-to-clipboard-button[data-copy-state~=copy-success] span {
+    color: #ffffff;
+}
+
+/* text copy is hidden */
+.copy-to-clipboard-button[data-copy-state=copy] span {
+    color: #e6caa8;
+}
+
+/* default item color */
+div.code-toolbar > .toolbar > .toolbar-item {
+    color: #e6caa8;
+}
+
+/* remove toolbar items decoration*/
+div.code-toolbar > .toolbar > .toolbar-item > a, 
+div.code-toolbar > .toolbar > .toolbar-item > button, 
+div.code-toolbar > .toolbar > .toolbar-item > span {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+
+

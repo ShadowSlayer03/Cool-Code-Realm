@@ -1,0 +1,2368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 
+    <meta charset="utf-8">
+    <title>Object Oriented Programming Codes</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="./programming.png" rel="icon">
+
+    <!-- Font Awesome Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="./bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="./oop_codes_styles.css" rel="stylesheet">
+
+    <!-- Prism  -->
+    <link rel="stylesheet" href="./prism.css">
+</head>
+
+<body>
+    <div class="container-xxl p-0">
+        <!-- Navbar Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar justify-content-center navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <img src="./logo.png" alt="Logo" class="logo">
+                    <h1 id="main-title">OOP CODES</span></h1>
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon" id="navToggle"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="../index.html" class="nav-item nav-link">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Questions</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="#ques1" class="dropdown-item">Question 1</a>
+                                <a href="#ques2" class="dropdown-item">Question 2</a>
+                                <a href="#ques3" class="dropdown-item">Question 3</a>
+                                <a href="#ques4" class="dropdown-item">Question 4</a>
+                                <a href="#ques5" class="dropdown-item">Question 5</a>
+                                <a href="#ques6" class="dropdown-item">Question 6</a>
+                                <a href="#ques7" class="dropdown-item">Question 7</a>
+                                <a href="#ques8" class="dropdown-item">Question 8</a>
+                                <a href="#ques9" class="dropdown-item">Question 9</a>
+                                <a href="#ques10" class="dropdown-item">Question 10</a>
+                                <a href="#ques11" class="dropdown-item">Question 11</a>
+                                <a href="#ques12" class="dropdown-item">Question 12</a>
+                                <a href="#ques13" class="dropdown-item">Question 13</a>
+                                <a href="#ques14" class="dropdown-item">Question 14</a>
+                                <a href="#ques15" class="dropdown-item">Question 15</a>
+                                <a href="#ques16a" class="dropdown-item">Question 16a</a>
+                                <a href="#ques16b" class="dropdown-item">Question 16b</a>
+                                <a href="#ques17a" class="dropdown-item">Question 17a</a>
+                                <a href="#ques17b" class="dropdown-item">Question 17b</a>
+                                <a href="#ques18" class="dropdown-item">Question 18</a>
+                                <a href="#ques19" class="dropdown-item">Question 19</a>
+                            </div>
+                        </div>
+                        <a href="#connect" class="nav-item nav-link">Connect</a>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+        <!-- NavbarEnd -->
+
+        <section id="about">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5" id="main-hero">
+            <div class="col-8 col-sm-8 col-lg-6">
+              <img src="./oops_concept_image.png" class="d-block mx-lg-auto" alt="OOP concepts" height="350px" loading="lazy">
+            </div>
+            <div class="col-lg-6 me-sm-auto" id="about">
+              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About</h1>
+              <p class="lead" id="about-para">
+                Explore the collection of Object-Oriented Programming Lab questions and their solution codes. Enhance your understanding of OOP concepts by going through their explanations below and advance your coding journey.
+                <br> <br>
+                This is just a guide to solving the lab programs. <br>Feel free to indulge your own creativity and implement your own version of the code. 
+                <br>
+                Happy Coding!!
+            </p>
+            </div>
+            <h1>Topics</h1>
+            <div class="topic-buttons">
+                <a href="#ques1"><button class="button button2">Basic C++</button></a>
+                <a href="#ques6"><button class="button button2">Classes and Objects</button></a>
+                <a href="#ques11"><button class="button button2">Operator Overloading</button></a>
+                <a href="#ques12"><button class="button button2">Inheritance</button></a>
+                <a href="#ques15"><button class="button button2">Polymorphism</button></a>
+                <a href="#ques16a"><button class="button button2">Templates</button></a>
+                <a href="#ques18"><button class="button button2">Exception Handling</button></a>
+                <a href="#ques19"><button class="button button2">STL</button></a>
+            </div>
+          </div>
+        </section>
+
+        <section id="questions">
+            <h1 id="ques1" id="questions-title" class="fw-bold text-body-emphasis lh-1 mb-3">Questions</h1>
+            <div class="Ques row-sm-6 row-lg-12">
+                <p class="lead">Question 1: <br>
+                    Write a C++ program to read three numbers from the keyboard and display the largest 
+                    value on the screen. 
+                </p>
+            </div>
+            <div  class="Code">
+                <pre>
+                    <code class="language-cpp">
+                        #include &lt;iostream&gt;
+
+                        int main() {
+                            int num1, num2, num3;
+                    
+                            std::cout &lt;&lt; "Enter three numbers: ";
+                            std::cin &gt;&gt; num1 &gt;&gt; num2 &gt;&gt; num3;
+                    
+                            int largest = num1;
+                            if (num2 &gt; largest) {
+                                largest = num2;
+                            }
+                            if (num3 &gt; largest) {
+                                largest = num3;
+                            }
+                    
+                            std::cout &lt;&lt; "The largest value is: " &lt;&lt; largest &lt;&lt; std::endl;
+                    
+                            return 0;
+                        }
+                    </code>
+                </pre>
+            </div>
+
+            <div class="accordion" id="ques2">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      Explanation
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                    <div class="accordion-body">
+                      <strong>Let us discuss the solution to the problem.</strong>
+                      <br> <br>
+                      <ul>
+                        <li>Initially all the three numbers(num1,num2,num3) are taken as input from the user.</li>
+                        <li>A variable called 'largest' is declared in which the result will be stored. This variable is initialised as num1. </li>
+                        <li>We then compare this variable with the second and the third element in a conditional statement and decide which is greater than the other.</li>
+                        <li>The largest value is then stored in the variable 'largest' and printed to the screen. </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+
+            <div class="Ques row-sm-6 row-lg-12">
+                <p class="lead">Question 2: <br>
+                    Write a C++ program to check whether the given number is an Armstrong 
+                    number or not. <br>(Hint: Armstrong number 153=1^3 + 5^3 + 3^3 ). 
+                </p>
+            </div>
+            <div class="Code">
+                <pre><code class="language-cpp">
+                    #include &lt;iostream&gt;
+                    #include &lt;cmath&gt;
+                    using namespace std;
+                    
+                    int main() {
+                        int number, originalNumber, remainder, result = 0, n = 0;
+                    
+                        cout &lt;&lt; "Enter a positive integer: ";
+                        cin &gt;&gt; number;
+                    
+                        originalNumber = number;
+                    
+                        while (originalNumber != 0) {
+                            originalNumber /= 10;
+                            ++n;
+                        }
+                        originalNumber = number;
+
+                        while (originalNumber != 0) {
+                            remainder = originalNumber % 10;
+                            result += pow(remainder, n);
+                            originalNumber /= 10;
+                        }
+                    
+                        if (result == number) {
+                            cout &lt;&lt; number &lt;&lt; " is an Armstrong number." &lt;&lt; endl;
+                        } else {
+                            cout &lt;&lt; number &lt;&lt; " is not an Armstrong number." &lt;&lt; endl;
+                        }
+                        return 0;
+                    }
+                    </code></pre>
+
+                    <div class="accordion" id="ques3">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                              Explanation
+                            </button>
+                          </h2>
+                          <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                            <div class="accordion-body">
+                              <strong>Let us discuss the solution to the problem.</strong>
+                              <br> <br>
+                              <ul>
+                                <li>Initially an integer is taken as input from the user and stored in variable 'number'.</li>
+                                <li>The variable called 'originalNumber' has the copy of the variable 'number'. </li>
+                                <li> The program calculates the number of digits in the given number by using the first while loop. It divides originalNumber by 10 until it becomes 0 and increments n for each division</li>
+                                <li>The value of originalNumber is reset to number to perform further calculations.</li>
+                                <li>Another while loop is used to calculate the Armstrong number. The loop continues until originalNumber becomes 0. Within the loop, the remainder of originalNumber divided by 10 is stored in the remainder variable, and remainder raised to the power of n is added to result. Finally, originalNumber is divided by 10.</li>
+                                <li>After the calculation, the program checks if result is equal to the original number. If they are equal, it means the number is an Armstrong number. The program outputs a corresponding message.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+            </div>
+
+            <div class="Ques row-sm-6 row-lg-12">
+                <p class="lead">Question 3: <br>
+                    Write a C++ program to find and display Factorial of a number. (Using iterative 
+                    method or recursion). 
+                </p>
+            </div>
+            <div class="Code">
+                <pre><code class="language-cpp">
+                    #include&lt;iostream&gt;
+                    using namespace std;
+                    
+                    long long int factRec(int n)
+                    {
+                      if(n==1)
+                        return 1;
+                      else 
+                        return n*factRec(n-1);
+                    }
+                    
+                    long long int fact(int n)
+                    {
+                      long long int sum=1,i;
+                      for(i=1;i<=n;i++)
+                          sum*=i;
+                      return sum;
+                    }
+                    
+                    int main()
+                    {
+                      int num;
+                      cout&lt;&lt;"Enter any number:"&lt;&lt;endl;
+                      cin&gt;&gt;num;
+                      cout&lt;&lt;factRec(num)&lt;&lt;endl;
+                      cout&lt;&lt;fact(num)&lt;&lt;endl;
+                      return 0;
+                    }
+                    </code></pre>
+
+                <div class="accordion" id="ques4">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                      Explanation
+                    </button>
+                  </h2>
+                  <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                    <div class="accordion-body">
+                      <strong>Let us discuss the solution to the problem.</strong>
+                      <br> <br>
+                      <ul>
+                        <li>The function 'factRec' calculates factorial recursively.</li>
+                        <li>The function takes an integer n as a parameter. If n is equal to 1, return 1 (the base case for factorial). Otherwise, recursively call 'factRec' with n-1 and multiply it by n.</li>
+                        <li>The function 'fact' that calculates the factorial of a number iteratively.</li>
+                        <li>The function takes an integer n as a parameter. Initialize a variable sum to 1. It is taken as 'long long int' so that large values beyond the range of integers can be displayed. <br> 
+                            Use a for loop to iterate from 1 to n. <br>
+                            Multiply sum by the current value of the loop variable. <br>
+                            Return the final value of sum, which is the factorial of n. <br>
+                        </li>
+                        <li>In the main function, we take the variable num from the user and pass it to both functions and value returned by both functions are printed to the screen.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="Ques row-sm-6 row-lg-12">
+                <p class="lead">Question 4: <br>
+                    Write a C++ program to print ASCII value of a character.
+                </p>
+            </div>
+            <div class="Code">
+                <pre><code class="language-cpp">
+                    #include&lt;iostream&gt;
+                    using namespace std;
+                    
+                    int main()
+                    {
+                      char c;
+                      cout &lt;&lt; "Enter a character" &lt;&lt; endl;
+                      cin &gt;&gt; c;
+                      cout &lt;&lt; "ASCII value of character is " &lt;&lt; (int)c &lt;&lt; endl;
+                      return 0;
+                    }
+                    </code></pre>
+                    <div class="accordion" id="ques5">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                      Explanation
+                    </button>
+                  </h2>
+                  <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample4">
+                    <div class="accordion-body">
+                      <strong>Let us discuss the solution to the problem.</strong>
+                      <br> <br>
+                      <ul>
+                        <li>A character is taken from the user and stored in the variable 'c'.</li>
+                        <li>It is then output to the screen by typecasting as an integer so that it prints the corresponding ASCII value.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Ques row-sm-6 row-lg-12">
+                <p class="lead">Question 5: <br>
+                  Write a C++ program that will accept an array of numbers and display the 
+                  number of times the given number occurred in the array.
+                </p>
+            </div>
+            <div class="Code">
+                <pre><code class="language-cpp">
+                    #include &lt;iostream&gt;
+                    using namespace std;
+                    int main() 
+                    {
+                    int size;
+                    cout&lt;&lt;"Enter the size of the array"&lt;&lt;endl;
+                    cin&gt;&gt;size;
+                    int i,num,count=0;
+                    int* arr = new int[size];
+                    cout&lt;&lt;"Enter the elements of the array"&lt;&lt;endl;
+                    for(i=0;i&lt;size;i++)
+                    {
+                        cin&gt;&gt;arr[i];
+                    }
+                    cout&lt;&lt;"Enter the number whose no. of appearances have to be counted: "&lt;&lt;endl;
+                    cin&gt;&gt;num;
+                    for(i=0;i&lt;size;i++)
+                    {
+                        if(arr[i]==num)
+                            count++;
+                    }
+                    cout&lt;&lt;"The number "&lt;&lt;num&lt;&lt;" occurs "&lt;&lt;count&lt;&lt;" times."&lt;&lt;endl;
+                    delete []arr;
+                    return 0;
+                    }
+                    </code></pre>
+                    
+                    </code></pre>
+              <div class="accordion" id="ques6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                      Explanation
+                    </button>
+                  </h2>
+                  <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample5">
+                    <div class="accordion-body">
+                      <strong>Let us discuss the solution to the problem.</strong>
+                      <br> <br>
+                      <ul>
+                        <li>The size of the array is taken and stored in a variable 'size'.</li>
+                        <li>Other necessary variables are declared along with the 'count' variable which counts the occurrences. It is initialised to 0.</li>
+                        <li>A new dynamic array is created of the required size and the elements in the array are taken from the user using a for loop and stored in the array.</li>
+                        <li>The number is taken from the user whose appearances have to be counted and stored in variable 'num'.</li>
+                        <li>Finally by using a for loop and conditionals, we count the number of times that number has occurred in the array and print it to the screen.</li>
+                        <li>The dynamic array is then deallocated from memory to prevent memory leak.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="Ques row-sm-6 row-lg-12">
+              <p class="lead">Question 6: <br>
+                Convert time from HH:MM:SS format to seconds using class in C++.
+              </p>
+          </div>
+          <div class="Code">
+              <pre><code class="language-cpp">
+                #include &lt;iostream&gt;
+                #include &lt;string&gt;
+                #include &lt;sstream&gt;
+                using namespace std;
+                
+                class Time
+                {
+                private:
+                  int hours;
+                  int minutes;
+                  int seconds;
+                public:
+                  void setHours(int h);
+                  void setMinutes(int m);
+                  void setSeconds(int s);
+                  int convert_to_sec();
+                };
+                
+                void Time::setHours(int h)
+                {
+                  hours = h;
+                }
+                void Time::setMinutes(int m)
+                {
+                  minutes = m;
+                }
+                void Time::setSeconds(int s)
+                {
+                  seconds = s;
+                }
+                int Time::convert_to_sec()
+                {
+                  int time = hours * 3600 + minutes * 60 + seconds;
+                  return time;
+                }
+
+                int strToi(const string& str) 
+                {
+                  istringstream iss(str);
+                  int result;
+                  if (!(iss >> result)) 
+                  {
+                    cout&lt;&lt;"Invalid Output"&lt;&lt;endl;
+                  }
+                  return result;
+                }
+                int main()
+                {
+                  string time;
+                  Time t1;
+                  cout &lt;&lt; "Enter the time in HH:MM:SS format" &lt;&lt; endl;
+                  getline(cin, time);   
+                
+                  istringstream iss(time);   
+                  string substr;
+                
+                  getline(iss, substr, ':');  
+                  int val = strToi(substr);    
+                  t1.setHours(val); 
+                
+                  getline(iss, substr, ':');
+                  val = strToi(substr);
+                  t1.setMinutes(val);
+                
+                  getline(iss, substr, ':');
+                  val = strToi(substr);
+                  t1.setSeconds(val);
+                
+                  cout &lt;&lt; "The time in seconds is " &lt;&lt; t1.convert_to_sec() &lt;&lt; endl;
+                  return 0;
+                }
+                  </code></pre>
+            <div class="accordion" id="ques7">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                    Explanation
+                  </button>
+                </h2>
+                <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample6">
+                  <div class="accordion-body">
+                    <strong>Let us discuss the solution to the problem.</strong>
+                    <br> <br>
+                    <ul>
+                      <li>The approach here is to take the input as a string in the format HH:MM:SS and then converting each of the hours, minutes and seconds to integers.</li>
+                      <span><u>Class:</u> </span><li>A class called 'Time' is created. This class has three private data members: hours, minutes, and seconds. It also contains public member functions for setting the values of these data members and converting the time to seconds.</li>
+                      <li>The setter functions just set the value to the parameter provided and they are defined outside the class with the help of the scope resolution operator.</li>
+                      <li>The convert_to_sec function just applies the known formula to convert hours, minutes and seconds to seconds.</li>
+                      <li>The code defines a helper function called 'strToi'. This function takes a string as input, converts it to an integer using an istringstream, and returns the result. If the conversion fails, it prints an error message.</li>
+                      <span><u>Main:</u> </span><li>In the main function, an object of class Time called t1 is created. It then prompts the user to enter the time in the "HH:MM:SS" format and reads the input using getline.</li>
+                      <li>Then the input string is converted to object of class istringstream because getline needs an input_stream as first parameter. It also declares a string variable substr to store the extracted substrings.</li>
+                      <li>Then in the next few lines, the first getline extracts the substring until the first colon ':' occurs and stores it in substr. Then, strToi is used to convert substr to an integer, which is then set as the hours using the setHours member function of the Time class. The same process is repeated for minutes and seconds.</li>
+                      <li>Finally, the program outputs the time in seconds by calling the convert_to_sec member function and displays it.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="Ques row-sm-6 row-lg-12">
+            <p class="lead">Question 7: <br>
+              A phone number, such as (044) 234-8900, can be thought of as having three parts: the 
+              area code (044), the exchange (234) and the number (8900). Write a program that uses 
+              a class to store these three parts of a phone number separately. Call the class phone. 
+              Create two class objects of type phone. Initialize one, and have the user input a number 
+              for the other one. Display both the numbers.
+            </p>
+        </div>
+        <div class="Code">
+          <pre><code class="language-cpp">
+            #include&lt;iostream&gt;
+            using namespace std;
+            
+            class Phone
+            {
+            public:
+              int area_code;
+              int exchange;
+              int number;
+              void printNum()
+              {
+                if(area_code&lt;100)
+                  cout&lt;&lt;"(0"&lt;&lt;area_code&lt;&lt;") "&lt;&lt;exchange&lt;&lt;"-"&lt;&lt;number&lt;&lt;endl;
+                else
+                  cout&lt;&lt;"("&lt;&lt;area_code&lt;&lt;") "&lt;&lt;exchange&lt;&lt;"-"&lt;&lt;number&lt;&lt;endl;
+              }
+            };
+            
+            int main()
+            {
+              Phone p1, p2;
+              p1.area_code = 44;
+              p1.exchange = 234;
+              p1.number = 8900;
+            
+              cout&lt;&lt;"Enter the number in this format (area_code  exchange  number): "&lt;&lt;endl;
+              cin&gt;&gt;p2.area_code&gt;&gt;p2.exchange&gt;&gt;p2.number;
+            
+              cout&lt;&lt;"The numbers are:"&lt;&lt;endl;
+              p1.printNum();
+              p2.printNum();
+              return 0;
+            }
+            </code></pre>
+          <div class="accordion" id="ques8">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                  Explanation
+                </button>
+              </h2>
+              <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionExample7">
+                <div class="accordion-body">
+                  <strong>Let us discuss the solution to the problem.</strong>
+                  <br> <br>
+                  <ul>
+                    <span><u>Class:</u> </span><li>This class represents a phone number and contains three public data members: area_code, exchange, and number. It also has a member function called printNum that prints the phone number in a specific format.</li>
+                    <li>The printNum member function of the Phone class is defined outside the class declaration so scope resolution operator must be used.</li>
+                    <span><u>Main:</u> </span><li>Two instances of the Phone class, p1 and p2, are created. The area_code, exchange, and number data members of p1 are assigned specific values. The program prompts the user to enter a phone number in a specific format and reads the input. The program then outputs the phone numbers.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="Ques row-sm-6 row-lg-12" id="ques8">
+          <p class="lead">Question 8: <br>
+            Create two classes DM and DB which store the value of distances. DM stores distance in 
+            meters and centimetres and DB in feet and inches. Write a program that can read values for 
+            the class objects and add one object of DM with another object of DB. Use a friend function 
+            to carry out the addition operation. The object that stores the results may be a DM object or 
+            DB object, depending on the units in which the results are required. The display should be 
+            in the format of feet and inches or meters and centimetres depending on the object on 
+            display.
+          </p>
+      </div>
+      <div class="Code">
+        <pre><code class="language-cpp">
+          #include&lt;iostream&gt;
+          using namespace std;
+          
+          class DB;
+          class DM
+          {
+          public:
+            int m;
+            int cm;
+            void setLength(int m, int cm)
+            {
+              this-&gt;m = m;
+              this-&gt;cm = cm;
+            }
+            friend void addition(DM a, DB b, int option);
+          };
+          
+          class DB
+          {
+          public:
+            int feet;
+            int inches;
+          public:
+            void setLength(int f, int i)
+            {
+              feet = f;
+              inches = i;
+            }
+            friend void addition(DM a, DB b, int option);
+          };
+          
+          void addition(DM a, DB b, int option)
+          {
+            switch (option)
+            {
+              case 1:
+              {
+                DM c;
+                float sum = a.m * 100 + a.cm + b.feet * 30.48 + b.inches * 2.54;
+                int meters = sum / 100;
+                float decimalPart = sum - meters * 100;
+                c.m = meters;
+                c.cm = decimalPart;
+                cout &lt;&lt; "The result after adding is: " &lt;&lt; c.m &lt;&lt; " meters and " &lt;&lt; c.cm &lt;&lt; " centimeters" &lt;&lt; endl;
+                break;
+              }
+              case 2:
+              {
+                DB c;
+                float sum = a.m * 39.37 + 0.394 * a.cm + b.feet * 12 + b.inches;
+                int feet = sum * 0.0833;
+                float decimalPart = sum - feet * 12;
+                c.feet = feet;
+                c.inches = decimalPart;
+                cout &lt;&lt; "The result after adding is: " &lt;&lt; c.feet &lt;&lt; " feet and " &lt;&lt; c.inches &lt;&lt; " inches" &lt;&lt; endl;
+                break;
+              }
+              default:
+              {
+                cout &lt;&lt; ".Invalid option given. Choose among the available options." &lt;&lt; endl;
+                break;
+              }
+            }
+          }
+          
+          int main()
+          {
+            int option;
+            DM obj1;
+            DB obj2;
+            cout &lt;&lt; "Creating object of DM class:" &lt;&lt; endl;
+            cout &lt;&lt; "Enter the length in this format (metres centimeters)" &lt;&lt; endl;
+            cin &gt;&gt; obj1.m &gt;&gt; obj1.cm;
+          
+            cout &lt;&lt; "Creating object of DB class:" &lt;&lt; endl;
+            cout &lt;&lt; "Enter the length in this format (feet inches)" &lt;&lt; endl;
+            cin &gt;&gt; obj2.feet &gt;&gt; obj2.inches;
+          
+            cout &lt;&lt; "Select units in which results are to be displayed:" &lt;&lt; endl &lt;&lt; "1. Meters and centimeters" &lt;&lt; endl &lt;&lt; "2. Feet and Inches" &lt;&lt; endl;
+            cin &gt;&gt; option;
+            addition(obj1, obj2, option);
+          
+            return 0;
+          }
+          </code></pre>
+          
+        <div class="accordion" id="ques9">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                Explanation
+              </button>
+            </h2>
+            <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionExample8">
+              <div class="accordion-body">
+                <strong>Let us discuss the solution to the problem.</strong>
+                <br> <br>
+                <ul>
+                  <span><u>Class:</u> </span>
+                  <li>
+                    The DM (Distance in Meters) and DB (Distance in Feet and Inches) classes are declared. These classes will be used to represent distances in different units.
+                  </li>
+                  <li>
+                    In the DM class, there are two integer member variables m and cm to represent meters and centimeters, respectively. The setLength function is defined to set the values of m and cm.
+                    The DB class has two integer member variables feet and inches to represent feet and inches, respectively. The other setLength function is defined to set the values of feet and inches.
+                  </li>
+                  <li>
+                    The addition function is declared as a friend function in both the DM and DB classes. It takes objects of DM and DB classes as arguments, along with an option parameter.
+                    The addition function performs addition of distances based on the option provided. If option is 1, it adds the distances in meters and centimeters. If option is 2, it adds the distances in feet and inches.
+                  </li>
+                  <li>
+                    Inside the addition function, a switch statement is used to handle the different options. If option 1 is selected, the distances are converted to centimeters and added. The result is then converted back to meters and centimeters. If option 2 is selected, the distances are converted to inches and added. The result is then converted back to feet and inches.
+                  </li>
+                  <span><u>Main:</u> </span>
+                  <li>
+                    In the main function, the user is prompted to enter the length in meters and centimeters for the DM object (obj1). Similarly, the user is prompted to enter the length in feet and inches for the DB object (obj2).The user is then prompted to select the units in which the results should be displayed. The option is stored in the option variable.
+                    Finally, the addition function is called with the obj1, obj2, and option arguments to perform the addition of distances and display the result.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="Ques row-sm-6 row-lg-12">
+        <p class="lead">Question 9: <br>
+          Write a C++ program to create a class Rectangle with data members: length, breadth, area 
+          and member functions as: <br>
+          i) Rectangle&setDimensions(const int&, const int&) – sets the length and breadth of 
+          arguments using constant references. Use this pointer to return the resized Rectangle by 
+          reference. <br>
+          ii) int computeArea( ) – to compute and returns area of a rectangle. <br>
+          iii)int computePerimeter( ) – to compute and return perimeter of a rectangle.  <br>
+          iv) Two constructors, default constructor to initialize data members to zero and an 
+          overloaded constructor as arguments with breadth having a default value. <br>
+          Define all the member functions outside the class. Create objects of Rectangle type and test all 
+          the functions. Create objects of Rectangle type on heap 
+          utilizing both constructors. Use the member functions to modify the rectangle size, 
+          compute area, perimeter. Display the area & perimeter of each rectangle. Delete the 
+          objects before pgm termination.
+          
+        </p>
+    </div>
+    <div class="alert alert-primary row-sm-6 flex-container" role="alert">
+      <div class="image-box">
+      <img src="./error.png" alt="warning-symbol">
+      </div>
+      <div class="text-box">
+      This code uses <u>constructor initialisation lists</u> which may not work in outdated compilers. 
+      <br>Use the flag <u>-std=c++0x</u> during compilation to avoid compiler errors.
+      <br>Eg:  <b><em>g++ file.cpp -std=c++0x </em></b>
+      </div>
+    </div>
+    <div class="Code">
+      <pre><code class="language-cpp">
+        #include &lt;iostream&gt;
+        using namespace std;
+        
+        class Rectangle {
+        private:
+          int length;
+          int breadth;
+        public:
+          Rectangle();
+          Rectangle(int l, int b=1);     // breadth should have a default argument
+          Rectangle&amp; setDimensions(const int&amp;, const int&amp;);
+          int computeArea();
+          int computePerimeter();
+        };
+        
+        Rectangle::Rectangle()   // Default constructor
+          : length{0}, breadth{0}
+        {};
+        
+        Rectangle::Rectangle(int l, int b)    // Parameterised Constructor
+          : length{l}, breadth{b}
+        {};
+        
+        int Rectangle::computeArea() {
+          return length * breadth;
+        }
+        
+        int Rectangle::computePerimeter() {
+          return 2 * (length + breadth);
+        }
+        
+        Rectangle&amp; Rectangle::setDimensions(const int&amp; l, const int&amp; b) {
+          length = l;
+          breadth = b;
+          return *this;
+        }
+        
+        int main() {
+          Rectangle rect1;
+          Rectangle rect2(30, 50);
+        
+          cout &lt;&lt; "Area of rect1 " &lt;&lt; rect1.computeArea() &lt;&lt; endl;
+          cout &lt;&lt; "Perimeter of rect1 " &lt;&lt; rect1.computePerimeter() &lt;&lt; endl;
+          cout &lt;&lt; "Area of rect2 " &lt;&lt; rect2.computeArea() &lt;&lt; endl;
+          cout &lt;&lt; "Perimeter of rect1 " &lt;&lt; rect2.computePerimeter() &lt;&lt; endl;
+        
+          Rectangle rect3;
+          rect3.setDimensions(10, 20);
+          cout &lt;&lt; "Area of rect3 " &lt;&lt; rect3.computeArea() &lt;&lt; endl;
+        
+          Rectangle* rect4 = new Rectangle;
+          cout &lt;&lt; "Area of rect4 " &lt;&lt; rect4-&gt;computeArea() &lt;&lt; endl;
+          cout &lt;&lt; "Perimeter of rect5 " &lt;&lt; rect4-&gt;computePerimeter() &lt;&lt; endl;
+          Rectangle* rect5 = new Rectangle(70, 80);
+          cout &lt;&lt; "Area of rect5 " &lt;&lt; rect5-&gt;computeArea() &lt;&lt; endl;
+          cout &lt;&lt; "Perimeter of rect5 " &lt;&lt; rect5-&gt;computePerimeter() &lt;&lt; endl;
+        
+          rect4-&gt;setDimensions(15, 25);
+          cout &lt;&lt; "Area of rect4 after changing dimensions " &lt;&lt; rect4-&gt;computeArea() &lt;&lt; endl;
+          cout &lt;&lt; "Perimeter of rect4 after changing dimensions " &lt;&lt; rect4-&gt;computePerimeter() &lt;&lt; endl;
+        
+          delete rect4;
+          delete rect5;
+          return 0;
+        }
+      </code></pre>
+        
+        
+      <div class="accordion" id="ques10">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+              Explanation
+            </button>
+          </h2>
+          <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#accordionExample9">
+            <div class="accordion-body">
+              Here we find that the default and parameterised constructors have initialized the values in a different syntax.  <br>
+              Syntax: <br>
+              ConstructorName(parameters) : memberVariable1(value1), memberVariable2(value2), ...
+              {}</span>  <br>
+              The initialization list allows you to initialize member variables directly and efficiently, using their respective constructors or assignment operators. This initialization happens before the constructor body executes. <br><br>
+              <strong>Let us discuss the solution to the problem.</strong>
+              <br><br>
+              <ul>
+                <span><u>Class:</u> </span><li>The Rectangle class is defined. It has two private member variables: length and breadth, which represent the dimensions of a rectangle.</li>
+                <li>There are multiple member functions in the class like a defaut constructor, parameterised constructor, computeArea( ) function to calculate the area and computePerimeter( ) function to calculate the perimeter. Finally there is also the setDimensions function which takes two const int& arguments and sets the values of length and breadth accordingly. It returns a reference to the current Rectangle object (*this).</li>
+                <span><u>Main:</u> </span><li>An object rect1 of the Rectangle class is created using the default constructor. Its computeArea and computePerimeter functions are called, and the results are printed.</li>
+                <li>Another object rect2 of the Rectangle class is created using the parameterized constructor with arguments 30 and 50. Its computeArea and computePerimeter functions are called, and the results are printed.</li>
+                <li>An object rect3 of the Rectangle class is created using the default constructor. Its setDimensions function is called with arguments 10 and 20 to set the dimensions. Then, its computeArea function is called and the result is printed.</li>
+                <li>A pointer rect4 of type Rectangle is created using the new keyword to allocate memory for a Rectangle object. The default constructor is called for this object. Its computeArea and computePerimeter functions are called, and the results are printed. Note that the arrow operator (->) is used to access member functions and variables through the pointer.</li>
+                <li>Another pointer rect5 of type Rectangle is created using the new keyword to allocate memory for a Rectangle object. The parameterized constructor is called with arguments 70 and 80 for this object. Its computeArea and computePerimeter functions are called, and the results are printed.</li>
+                <li>The setDimensions function is called on rect4 with arguments 15 and 25 to update its dimensions. Then, its computeArea and computePerimeter functions are called, and the results are printed.</li>
+                <li>Finally, the memory allocated for rect4 and rect5 is freed using the delete keyword.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Ques row-sm-6 row-lg-12">
+      <p class="lead">Question 10: <br>
+        Write a C++ program to create a class called Complex and implement the following 
+        overloading member functions that return a Complex number after performing addition of 
+        input args. <br>
+        - Complex ADD(int a, Complex s) – where a is an integer(real part) and s is a 
+        complex number. <br>
+        - Complex ADD(Complex &s1, Complex &s2)
+      </p>
+  </div>
+  <div class="alert alert-primary row-sm-6 flex-container" role="alert">
+    <div class="image-box">
+    <img src="./error.png" alt="warning-symbol">
+    </div>
+    <div class="text-box">
+    This code uses <u>constructor initialisation lists</u> which may not work in outdated compilers. 
+    <br>Use the flag <u>-std=c++0x</u> during compilation to avoid compiler errors.
+    <br>Eg:  <b><em>g++ file.cpp -std=c++0x </em></b>
+    </div>
+  </div>
+  <div class="Code">
+    <pre><code class="language-cpp">
+      #include&lt;iostream&gt;
+      using namespace std;
+      
+      class Complex
+      {
+      private:
+        int real;
+        int img;
+      public:
+        Complex(int r=0, int i=0);
+        int getReal();
+        int getImg();
+        Complex ADD(int a, Complex s);
+        Complex ADD(Complex&amp; s1, Complex&amp; s2);
+      };
+      
+      Complex::Complex(int r, int i)
+        : real{r}, img{i}
+      {}
+      
+      Complex Complex::ADD(int a, Complex s)
+      {
+        Complex result;
+        result.real = a + s.real;
+        result.img = s.img;
+        return result;
+      }
+      
+      Complex Complex::ADD(Complex&amp; s1, Complex&amp; s2)
+      {
+        Complex result;
+        result.real = s1.real + s2.real;
+        result.img = s1.img + s2.img;
+        return result;
+      }
+      
+      int Complex::getReal()
+      {
+        return real;
+      }
+      
+      int Complex::getImg()
+      {
+        return img;
+      }
+      
+      int main()
+      {
+        Complex c1(23, 45);
+        Complex c2(35, 89);
+      
+        Complex answer = c1.ADD(4, c1);
+        cout &lt;&lt; answer.getReal() &lt;&lt; "+i" &lt;&lt; answer.getImg() &lt;&lt; endl;
+      
+        answer = c1.ADD(c1, c2);
+        cout &lt;&lt; answer.getReal() &lt;&lt; "+i" &lt;&lt; answer.getImg() &lt;&lt; endl;
+      
+        return 0;
+      }
+      </code></pre>
+      
+    <div class="accordion" id="ques11">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+            Explanation
+          </button>
+        </h2>
+        <div id="collapse10" class="accordion-collapse collapse" data-bs-parent="#accordionExample10">
+          <div class="accordion-body">
+            <strong>Let us discuss the solution to the problem.</strong>
+            <br> <br>
+            <ul>
+              <span><u>Class:</u> </span><li>The Complex class is defined, representing complex numbers. It has private data members real and img to store the real and imaginary parts of the complex number.</li>
+              <li>
+                The class has a constructor Complex(int r=0, int i=0) that initializes the real and img members with the provided values (or defaults to 0 if no values are provided).
+              </li>
+              <li>
+                The class has getter functions getReal( ) and getImg( ) that return the values of the real and img members, respectively.
+              </li>
+              <li>
+                The class has two overloaded member functions named ADD. The first one takes an integer a and a Complex object s as parameters. It returns a new Complex object that represents the sum of a and the real part of s, with the imaginary part of s unchanged. The second ADD function is overloaded and takes two Complex objects s1 and s2 as parameters. It returns a new Complex object that represents the sum of the real and imaginary parts of s1 and s2.
+              </li>
+              <li>
+                Outside the class, the getReal( ) and getImg( ) member functions are defined. They return the values of the corresponding private members.
+              </li>
+              <span><u>Main:</u> </span>
+              <li>
+                Two Complex objects c1 and c2 are created with initial values for the real and imaginary parts.
+              </li>
+              <li>
+                The ADD member function is called on c1 with the parameters 4 and c1 itself. The returned Complex object is assigned to the answer variable. The complex number is printed to console using getReal( ) and getImg( ) functions.
+              </li>
+                <li>
+                  The ADD member function is called on c1 with the parameters c1 and c2. The returned Complex object is assigned to the answer variable.
+                  Again, the getReal( ) and getImg( ) member functions are called on answer and the values are printed to the console.
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="Ques row-sm-6 row-lg-12">
+    <p class="lead">Question 11: <br>
+      Write a C++ program to create a class called STACK using an array of integers. Implement 
+      the following operations by overloading the operators ‘+’ and ‘-’. <br>
+      i) S1 = S1 + element; where S1 is the object of class STACK and element is an 
+      integer to be pushed on the top of stack. <br>
+      ii) int element = S1--; where S1 is the object of class STACK. ‘—‘operator pops the top 
+      element. <br>
+      Handle the STACK empty and full conditions and also display the contents after every 
+      operation by overloading << operator.
+    </p>
+</div>
+<div class="Code">
+  <pre><code class="language-cpp">
+    #include &lt;iostream&gt;
+    using namespace std;
+    
+    class STACK
+    {
+    private:
+      int top;
+      int size;
+      int* arr;
+    public:
+      STACK(int size);
+      STACK operator+(int element);
+      int operator--(int);
+      friend ostream& operator<<(ostream& os, STACK& st);
+    };
+    
+    STACK::STACK(int size)
+    {
+      this->size = size;
+      arr = new int[this->size];
+      top = -1;
+    }
+    
+    STACK STACK::operator+(int element)
+    {
+      if (this->top == this->size - 1)
+        cout &lt;&lt; "Stack overflow" &lt;&lt; endl;
+      else
+      {
+        this->top++;
+        this->arr[this->top] = element;
+      }
+      return *this;
+    }
+    
+    int STACK::operator--(int)
+    {
+      int x = -1;
+      if (this->top == -1)
+        cout &lt;&lt; "Stack Underflow" &lt;&lt; endl;
+      else
+        x = this->arr[this->top--];
+      return x;
+    }
+    
+    ostream& operator&lt;&lt;(ostream& os, STACK& st)
+    {
+      int i;
+      if (st.top == -1)
+      {
+        cout &lt;&lt; "No elements to display" &lt;&lt; endl;
+        return os;
+      }
+    
+      for (i = st.top; i >= 0; i--)
+        os &lt;&lt; st.arr[i] &lt;&lt; endl;
+      return os;
+    }
+    
+    int main()
+    {
+      STACK s(10);
+      s = s + 56;
+      s = s + 78;
+      s = s + 89;
+      s = s + 90;
+      s = s + 590;
+      cout &lt;&lt; "Elements in the stack are: " &lt;&lt; endl;
+      cout &lt;&lt; s &lt;&lt; endl;
+      int element = s--;
+      cout &lt;&lt; element &lt;&lt; " was popped from the stack" &lt;&lt; endl;
+      element = s--;
+      cout &lt;&lt; element &lt;&lt; " was popped from the stack" &lt;&lt; endl;
+      cout &lt;&lt; endl;
+      cout &lt;&lt; "Remaining Elements in the stack are: " &lt;&lt; endl;
+      cout &lt;&lt; s;
+      return 0;
+    }
+  </code></pre>
+    
+
+  <div class="accordion" id="ques12">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+          Explanation
+        </button>
+      </h2>
+      <div id="collapse11" class="accordion-collapse collapse" data-bs-parent="#accordionExample11">
+        <div class="accordion-body">
+          <strong>Let us discuss the solution to the problem.</strong>
+          <br> <br>
+          <ul>
+            <span><u>Class:</u> </span><li>The STACK class is defined, representing a stack data structure. It has private data members top, size, and arr, representing the top index, maximum size, and an array to store the stack elements, respectively.</li>
+            <li>
+              The class has a constructor STACK(int size) that initializes the size of the stack and dynamically allocates memory for the array based on the provided size. The top index is set to -1 initially.
+            </li>
+            <li>
+              The class overloads the + operator with the STACK return type. It adds an element to the stack if there is space available. If the stack is full, it displays "Stack overflow" message.
+              The class overloads the -- operator with the int return type. It removes and returns the top element from the stack if it is not empty. If the stack is empty, it displays "Stack Underflow" message and returns -1.
+            </li>
+            <li>
+              The << operator is overloaded as a friend function to provide the insertion operator functionality for ostream and STACK objects. It displays the elements of the stack in reverse order.
+            </li>
+            <span><u>Main:</u> </span>
+            <li>
+              A STACK object s is created with a maximum size of 10.
+            </li>
+            <li>
+              The + operator is called on s multiple times to add elements to the stack.
+            </li>
+              <li>
+                The << operator is used to display the elements of the stack using the cout object.
+              </li>
+              <li>
+                The -- operator is used on s to remove and retrieve the top element from the stack. The popped element is stored in the element variable, which is then displayed along with a message. Previous two steps are repeated to pop another element from the stack.
+              </li>
+              <li>
+                Finally, the << operator is used again to display the updated elements of the stack.
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="Ques row-sm-6 row-lg-12">
+  <p class="lead">Question 12: <br>
+    Write a C++ program to read and print Employee information (name, empID, gender) 
+    with Department (deptName, workAssigned) and with Loan information 
+    (loanDetails,loanAmt) using hierarchical inheritance.
+  </p>
+</div>
+<div class="alert alert-primary row-sm-6 flex-container" role="alert">
+  <div class="image-box">
+  <img src="./error.png" alt="warning-symbol">
+  </div>
+  <div class="text-box">
+  This code uses <u>constructor initialisation lists</u> which may not work in outdated compilers. 
+  <br>Use the flag <u>-std=c++0x</u> during compilation to avoid compiler errors.
+  <br>Eg:  <b><em>g++ file.cpp -std=c++0x </em></b>
+  </div>
+</div>
+<div class="Code">
+  <pre><code class="language-cpp">
+    // Make customisations as required in the main fn like taking info from user.
+    #include&lt;iostream&gt;
+    #include&lt;string&gt;
+    using namespace std;
+    
+    class Employee
+    {
+    private:
+      string name;
+      int empID;
+      string gender;
+    public:
+      Employee(string n, int e, string g): name{n}, empID{e}, gender{g} {}
+      string getName() { return name; }
+      int getEmpID()  { return empID; }
+      string getGender()  { return gender; }
+      void setName(string n)  { name=n; }
+      void setEmpID(int eid)  { empID=eid; }
+      void setGender(string g)  { gender=g; }
+    };
+    
+    class Department: public Employee
+    {
+    private:
+      string deptName;
+      string workAssigned;
+    public:
+      Department(string dept, string work, string n, int e, string g):
+      Employee(n, e, g), deptName{dept}, workAssigned{work} {}
+      string getDeptName() { return deptName; }
+      string getWorkAssgn() { return workAssigned; }
+      void setDeptName(string n) { deptName=n; }
+      void setWorkAssgn(string w) { workAssigned=w; }
+    };
+    
+    class LoanInfo: public Employee
+    {
+    public:
+      string loanDetails;
+      float loanAmt;
+      LoanInfo(string n, int e, string g):
+      Employee(n, e, g)
+      {
+        string loan;
+        float amount;
+        cout&lt;&lt;"Enter the type of loan preferred(Car,House,Student etc): "&lt;&lt;endl;
+        cin&gt;&gt;loan;
+        cout&lt;&lt;"Enter the loan amount: "&lt;&lt;endl;
+        cin&gt;&gt;amount;
+        loanDetails = loan;
+        loanAmt = amount;
+      }
+    };
+    
+    int main()
+    {
+      Department d("IT", "Cloud Engineer", "Jane Fischer", 56, "Female");
+      cout&lt;&lt;"Name: "&lt;&lt;d.getName()&lt;&lt;endl&lt;&lt;"Employee ID: "&lt;&lt;d.getEmpID()&lt;&lt;endl&lt;&lt;"Gender: "&lt;&lt;d.getGender()&lt;&lt;endl;
+    
+      cout&lt;&lt;endl&lt;&lt;"Create Loan Object"&lt;&lt;endl;
+      LoanInfo l("Raghav Kumar", 78, "Male");
+      cout&lt;&lt;"Name: "&lt;&lt;l.getName()&lt;&lt;endl&lt;&lt;"Employee ID: "&lt;&lt;l.getEmpID()&lt;&lt;endl&lt;&lt;"Gender: "&lt;&lt;l.getGender()&lt;&lt;endl&lt;&lt;"Loan Type: "&lt;&lt;l.loanDetails&lt;&lt;endl&lt;&lt;"Loan Amount: "&lt;&lt;l.loanAmt&lt;&lt;endl;
+    
+      return 0;
+    }
+    </code></pre>
+    
+  
+<div class="accordion" id="ques13">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+        Explanation
+      </button>
+    </h2>
+    <div id="collapse12" class="accordion-collapse collapse" data-bs-parent="#accordionExample12">
+      <div class="accordion-body">
+        <strong>Let us discuss the solution to the problem.</strong>
+        <br> <br>
+        <ul>
+          <span><u>Class:</u> </span><li>The Employee class is defined, representing an employee. It has private data members name, empID, and gender to store the name, employee ID, and gender of the employee, respectively.</li>
+          <li>
+            The class has a constructor Employee(string n, int e, string g) that initializes the name, empID, and gender members with the provided values.
+          </li>
+          <li>
+            The class has getter functions getName( ), getEmpID( ), and getGender( ) that returns the private member values and setter functions setName( ), setEmpID( ), and setGender( ) which is used to set those respective values.
+          </li>
+          <li>
+            The Department class is defined, derived from the Employee class. It represents an employee's department and work assignment. It has private data members deptName and workAssigned to store the department name and work assignment, respectively.
+          </li>
+          <li>
+            The class has a constructor Department(string dept, string work, string n, int e, string g) that initializes the deptName and workAssigned members using the provided values. It also calls the Employee base class constructor to initialize the common employee information.
+          </li>
+          <li>
+            The class has getter functions getDeptName( ) and getWorkAssgn( ) that return the private members of that class as well as setter functions setDeptName( ) and setWorkAssgn( ) to modify the values of the corresponding private members.
+          </li>
+          <li>
+            The LoanInfo class is defined, also derived from the Employee class. It represents additional loan information for an employee. It has public data members loanDetails and loanAmt to store the loan details and loan amount, respectively.
+          </li>
+          <li>
+            The class has a constructor LoanInfo(string n, int e, string g) that calls the Employee base class constructor to initialize the common employee information. It prompts the user to enter the loan type and loan amount, and assigns the values to the loanDetails and loanAmt members.
+          </li>
+          <span><u>Main:</u> </span>
+          <li>
+            A Department object d is created with department name "IT", work assignment "Cloud Engineer", employee name "Jane Fischer", employee ID 56, and gender "Female". The common employee information is accessed using the respective getter functions and displayed.
+          </li>
+          <li>
+            A LoanInfo object l is created with employee name "Raghav Kumar", employee ID 78, and gender "Male". The common employee information is accessed using the respective getter functions, along with the loan details and loan amount, and displayed.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="Ques row-sm-6 row-lg-12">
+  <p class="lead">Question 13: <br>
+    Write a C++ program to design a Student class representing USN and a Test class 
+    representing the scores of the student in various subjects and a Sports class representing the 
+    score in sports. The Sports and Test classes is inherited by Result class having the 
+    functionality to add the scores and display the final result of a student.
+  </p>
+</div>
+<div class="Code">
+  <pre><code class="language-cpp">
+    #include &lt;iostream&gt;
+    using namespace std;
+    
+    class Student 
+    {
+    protected:
+        string usn;
+    
+    public:
+        void setUSN(string _usn) 
+        {   usn = _usn;  }
+ 
+        string getUSN() 
+        {    return usn;  }
+    };
+    
+    class Test 
+    {
+    protected:
+        int totalScore;
+    
+    public:
+        void setTotalScore(int score) 
+        {  totalScore = score;  }
+        
+        int getTotalScore() 
+        {   return totalScore; }
+
+    };
+    
+    class Sports {
+    protected:
+        int sportsScore;
+    
+    public:
+        void setSportsScore(int score) 
+        {    sportsScore = score; }
+
+        int getSportsScore() 
+        {    return sportsScore; }
+    };
+    
+    class Result : public Sports, public Test 
+    {
+    public:
+        void displayResult() 
+        {
+            int finalScore = getTotalScore() + getSportsScore();
+            cout &lt;&lt; "Total Score: " &lt;&lt; finalScore &lt;&lt; endl;
+        }
+    };
+    
+    int main() {
+        Result result;
+        int testScore, sportsScore;
+    
+        cout &lt;&lt; "Enter Test Score: ";
+        cin &gt;&gt; testScore;
+        result.setTotalScore(testScore);
+    
+        cout &lt;&lt; "Enter Sports Score: ";
+        cin &gt;&gt; sportsScore;
+        result.setSportsScore(sportsScore);
+    
+        result.displayResult();
+    
+        return 0;
+    }</code></pre>
+    
+    
+<div class="accordion" id="ques14">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+        Explanation
+      </button>
+    </h2>
+    <div id="collapse13" class="accordion-collapse collapse" data-bs-parent="#accordionExample13">
+      <div class="accordion-body">
+        <strong>Let us discuss the solution to the problem.</strong>
+        <br> <br>
+        <ul>
+          <span><u>Class:</u> </span><li>The Student class is defined, representing a student. It has a protected member usn to store the student's unique identifier (USN). It provides public member functions setUSN( ) and getUSN( ) to set and retrieve the USN value.</li>
+          <li>
+            The Test class is defined, representing test scores. It has a protected member totalScore to store the total test score. It provides public member functions setTotalScore( ) and getTotalScore( ) to set and retrieve the total score value.
+          </li>
+          <li>
+            The Sports class is defined, representing sports scores. It has a protected member sportsScore to store the sports score. It provides public member functions setSportsScore( ) and getSportsScore( ) to set and retrieve the sports score value.
+          </li>
+          <li>
+            The Result class is defined, derived from both the Sports and Test classes. It represents the final result, which combines the test score and sports score. It provides a public member function displayResult( ) to calculate and display the total score.
+          </li>
+          <span><u>Main:</u> </span>
+          <li>
+            An object of the Result class named result is created.
+          </li>
+          <li>
+            The program prompts the user to enter the student's USN, test score, and sports score using cout and cin statements. The respective member functions of the Result object are then called to set these values.
+          </li>
+          <li>After receiving the inputs, the program displays an empty line for formatting purposes.</li>
+          <li>The program displays the result for the entered USN by calling the getUSN( ) function of the Result object and passing it to cout. It then calls the displayResult( ) function to calculate and display the total score.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="Ques row-sm-6 row-lg-12">
+  <p class="lead">Question 14: <br>
+    Write a C++ program to create a class called STUDENT with data members USN, Name 
+    and Age. Using inheritance, create the classes UGSTUDENT and PGSTUDENT having 
+    fields as Semester, Fees and Stipend. Enter the data for at least 5
+    students from UG and PG. 
+    <br>Find the average age for all UG and PG students separately.
+  </p>
+</div>
+<div class="Code">
+  <pre><code class="language-cpp">
+    // Some class functions maybe extra or some approach may seem tedious. Make changes as required.
+    #include &lt;iostream&gt;
+    using namespace std;
+    
+    class UGSTUDENT;
+    class PGSTUDENT;
+    
+    class STUDENT
+    {
+    private:
+      string USN;
+      string name;
+      int age;
+    public:
+      int getAge(){ return age;}
+      string getUSN(){ return USN;}
+      string getName(){ return name;}
+      void setAge(int a){ age=a;}
+      void setUSN(string usn){ USN=usn;}
+      void setName(string n){ name=n;}
+      friend void getDetails(UGSTUDENT* ug, PGSTUDENT* pg,int size);
+    };
+    
+    class UGSTUDENT: public STUDENT
+    {
+    public:
+      int semNo;
+      float fees;
+      double stipend;
+      friend void getDetails(UGSTUDENT* ug, PGSTUDENT* pg,int size);
+      friend void printDetails(UGSTUDENT* ug, PGSTUDENT* pg,int size);
+    };
+    
+    class PGSTUDENT: public STUDENT
+    {
+    public:
+      int semNo;
+      float fees;
+      double stipend;
+      friend void getDetails(UGSTUDENT* ug, PGSTUDENT* pg,int size);
+      friend void printDetails(UGSTUDENT* ug, PGSTUDENT* pg,int size);
+    };
+    
+    void getDetails(UGSTUDENT* ug, PGSTUDENT* pg,int size)
+    {
+      string usn,name;
+      int age,i;
+      cout&lt;&lt;"Enter UG student details:"&lt;&lt;endl;
+      for(i=0;i&lt;size;i++)
+        {
+          cout&lt;&lt;"Enter the USN"&lt;&lt;endl;
+          cin.ignore();    // Ignore the newline character from previous input
+          getline(cin,usn);
+          ug[i].setUSN(usn);
+          cout&lt;&lt;"Enter the Name"&lt;&lt;endl;
+          getline(cin,name);
+          ug[i].setName(name);
+          cout&lt;&lt;"Enter the Age"&lt;&lt;endl;
+          cin>>age;
+          ug[i].setAge(age);
+          // cout&lt;&lt;"Enter the Semester"&lt;&lt;endl;
+          // cin&gt;&gt;ug[i].semNo;
+          // cout&lt;&lt;"Enter the Fees"&lt;&lt;endl;
+          // cin&gt;&gt;ug[i].fees;
+          // cout&lt;&lt;"Enter the Stipend"&lt;&lt;endl;
+          // cin&gt;&gt;ug[i].stipend;
+        }
+      cout&lt;&lt;"Enter PG student details:"&lt;&lt;endl;
+      for(i=0;i&lt;size;i++)
+        {
+          cout&lt;&lt;"Enter the USN"&lt;&lt;endl;
+          cin.ignore();    // Ignore the newline character from previous input
+          getline(cin,usn);
+          pg[i].setUSN(usn);
+          cout&lt;&lt;"Enter the Name"&lt;&lt;endl;
+          getline(cin,name);
+          pg[i].setName(name);
+          cout&lt;&lt;"Enter the Age"&lt;&lt;endl;
+          cin>>age;
+          pg[i].setAge(age);
+          // cout&lt;&lt;"Enter the Semester"&lt;&lt;endl;
+          // cin&gt;&gt;pg[i].semNo;
+          // cout&lt;&lt;"Enter the Fees"&lt;&lt;endl;
+          // cin&gt;&gt;pg[i].fees;
+          // cout&lt;&lt;"Enter the Stipend"&lt;&lt;endl;
+          // cin&gt;&gt;pg[i].stipend;
+        }
+    }
+    
+    //This function is just to print details of students. Not necessary.
+    void printDetails(UGSTUDENT* ug, PGSTUDENT* pg,int size)
+    {
+        int i;
+        cout&lt;&lt;"UG student details: "&lt;&lt;endl;
+        for(i=0;i&lt;size;i++)
+        {
+            cout&lt;&lt;"Name: "&lt;&lt;ug[i].getName()&lt;&lt;endl;
+            cout&lt;&lt;"USN: "&lt;&lt;ug[i].getUSN()&lt;&lt;endl;
+            cout&lt;&lt;"Age: "&lt;&lt;ug[i].getAge()&lt;&lt;endl&lt;&lt;endl;
+        }
+        
+         cout&lt;&lt;"PG student details: "&lt;&lt;endl;
+        for(i=0;i&lt;size;i++)
+        {
+            cout&lt;&lt;"Name: "&lt;&lt;pg[i].getName()&lt;&lt;endl;
+            cout&lt;&lt;"USN: "&lt;&lt;pg[i].getUSN()&lt;&lt;endl;
+            cout&lt;&lt;"Age: "&lt;&lt;pg[i].getAge()&lt;&lt;endl&lt;&lt;endl;
+        }
+    }
+    
+    int main()
+    {
+      int i,size=5;
+      UGSTUDENT ug[size];
+      PGSTUDENT pg[size];    // Both of these arrays can be initialised during declaration or can be taken from the user.
+      getDetails(ug,pg,size);  // Here the values are taken from the user using this fn
+      printDetails(ug,pg,size);
+      int ageSum=0;
+      for(i=0;i&lt;size;i++)
+        ageSum+=ug[i].getAge();
+      cout&lt;&lt;"Average age of all UG students is "&lt;&lt;ageSum/size&lt;&lt;endl;
+      ageSum=0;
+      for(i=0;i&lt;size;i++)
+        ageSum+=pg[i].getAge();
+      cout&lt;&lt;"Average age of all PG students is "&lt;&lt;ageSum/size&lt;&lt;endl;
+      return 0;
+    }
+  </code></pre>
+    
+    
+    
+<div class="accordion" id="ques15">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+        Explanation
+      </button>
+    </h2>
+    <div id="collapse14" class="accordion-collapse collapse" data-bs-parent="#accordionExample14">
+      <div class="accordion-body">
+        <strong>Let us discuss the solution to the problem.</strong>
+        <br> <br>
+        <ul>
+          <span><u>Class:</u> </span><li>The STUDENT class is defined, representing a student. It has private data members USN, name, and age to store the student's unique identifier, name, and age, respectively. It provides getter and setter member functions to access and modify these private members.</li>
+          <li>
+            The UGSTUDENT class and the PGSTUDENT class are defined, both derived from the STUDENT class. They add additional data members specific to undergraduate and postgraduate students, such as semNo, fees, and stipend.
+          </li>
+          <li>
+            The getDetails( ) function is defined to prompt the user to enter details for both undergraduate and postgraduate students. It takes arrays of UGSTUDENT and PGSTUDENT objects, along with the size of the arrays, as parameters. Inside the function, it uses cin and getline( ) to retrieve user inputs for each student's USN, name, and age. Other details like semester, fees, and stipend are commented out in this code, but they can be added or modified as needed.
+          </li>
+          <li>
+            The printDetails( ) function is a function not necessary for this problem yet it is created to print out the data values related to the UG and PG students, taken from the user.
+          </li>
+          <span><u>Main:</u> </span>
+          <li>
+            The variables ug and pg are declared as arrays of UGSTUDENT and PGSTUDENT objects, respectively, with a given size.
+          </li>
+          <li>
+            The getDetails( ) function is called, passing the arrays ug and pg, along with the size, to populate the student details.
+          </li>
+          <li>Two for loops are used to calculate the average age of the undergraduate and postgraduate students, respectively. The ages of all students are summed up using the getAge( ) function, and then divided by the size of the array.</li>
+          <li>The average ages for both undergraduate and postgraduate students are displayed using cout.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="Ques row-sm-6 row-lg-12">
+  <p class="lead">
+    Question 15:  <br>
+    Implement class Shape with the following specification: <br>
+    class Shape{ <br>
+    protected: <br>
+    float area, perimeter;  <br>
+    public: <br>
+    Shape( ); <br>
+    virtual void initialize( )=0;  <br>
+    virtual float computeArea( )=0;  <br>
+    virtual float computePerimeter( )=0;   <br> 
+    virtual ~Shape( ); <br>
+    };  <br>
+    Implement 2 classes Triangle and Rectangle publicly derived from class Shape, with 
+    suitable data members. Implement all the functions derived from class shape in each of the 
+    derived classes. 
+    <br>Write a C++ program to create objects of each of the derived class and 
+    assign to the base class (Shape) type pointer/reference. Demonstrate runtime
+    polymorphism by calling the functions of the derived class objects by using the base class 
+    pointer/reference.
+  </p>
+</div>
+<div class="Code">
+  <pre><code class="language-cpp">
+    #include &lt;iostream&gt;
+    using namespace std;
+    
+    class Shape
+    {
+    protected:
+        float area, perimeter;
+    public:
+        Shape();
+        virtual void initialize() = 0;
+        virtual float computeArea() = 0;
+        virtual float computePerimeter() = 0;
+        virtual ~Shape();
+    };
+    
+    Shape::Shape()
+    {
+        area = 0;
+        perimeter = 0;
+    }
+    
+    Shape::~Shape()
+    {
+        cout &lt;&lt; "Shape Destroyed" &lt;&lt; endl;
+    }
+    
+    class Triangle : public Shape
+    {
+    private:
+        int base, height;
+    public:
+        Triangle(int h = 0, int b = 0) { height = h; base = b; }
+        void initialize()
+        {
+            cout &lt;&lt; "Enter the height of the triangle" &lt;&lt; endl;
+            cin &gt;&gt; height;
+            cout &lt;&lt; "Enter the base of the triangle" &lt;&lt; endl;
+            cin &gt;&gt; base;
+        }
+        float computeArea()
+        {
+            return 0.5 * base * height;
+        }
+        float computePerimeter()
+        {
+            return 3.0 * base;   // Equilateral Triangle
+        }
+        ~Triangle()
+        {
+          cout &lt;&lt;"Triangle Destructor called"&lt;&lt;endl;
+        }
+    };
+    
+    class Rectangle : public Shape
+    {
+    private:
+        int breadth, length;
+    public:
+        Rectangle(int l = 0, int b = 0) { length = l; breadth = b; }
+        void initialize()
+        {
+            cout &lt;&lt; "Enter the length of the rectangle" &lt;&lt; endl;
+            cin &gt;&gt; length;
+            cout &lt;&lt; "Enter the breadth of the rectangle" &lt;&lt; endl;
+            cin &gt;&gt; breadth;
+        }
+        float computeArea()
+        {
+            return length * breadth;
+        }
+        float computePerimeter()
+        {
+            return 2 * (length + breadth);   // Equilateral Triangle
+        }
+        ~Rectangle()
+        {
+          cout &lt;&lt;"Rectangle Destructor called"&lt;&lt;endl;
+        }
+    };
+    
+    int main()
+    {
+        Triangle t;
+        Rectangle r;
+        Shape* s = &amp;t;
+        s->initialize();
+        cout &lt;&lt; "Area of triangle = " &lt;&lt; s->computeArea() &lt;&lt; endl;
+        cout &lt;&lt; "Perimeter of triangle = " &lt;&lt; s->computePerimeter() &lt;&lt; endl;
+    
+        s = &amp;r;
+        s->initialize();
+        cout &lt;&lt; "Area of rectangle = " &lt;&lt; s->computeArea() &lt;&lt; endl;
+        cout &lt;&lt; "Perimeter of rectangle = " &lt;&lt; s->computePerimeter() &lt;&lt; endl;
+    
+        return 0;
+    }
+    </code></pre>
+
+<div class="accordion" id="ques16a">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+        Explanation
+      </button>
+    </h2>
+    <div id="collapse15" class="accordion-collapse collapse" data-bs-parent="#accordionExample15">
+      <div class="accordion-body">
+        <strong>Let us discuss the solution to the problem.</strong>
+        <br> <br>
+        <ul>
+          <span><u>Class:</u> </span><li>The Shape class is defined as an abstract base class. It has protected data members area and perimeter. It provides pure virtual member functions initialize( ), computeArea( ), and computePerimeter( ).</li>
+          <li>
+            The Shape class also has a constructor and a destructor defined. <br>
+            <u>Note:</u> The shape class destructor is also virtual here so that when the derived class object pointed to by the base class pointer is deleted, we need to make sure that the correct destructor(derived class destructor) is called rather than the base class destructor.
+            Without a virtual destructor, if you delete an object through a base class pointer, only the base class destructor is called. This can lead to memory leaks and potential resource leaks in the derived class, as the derived class destructor would not be called.
+          </li>
+          <li>
+            The Triangle class is defined, derived from the Shape class. It adds private data members base and height. It implements the initialize( ), computeArea( ), and computePerimeter( ) member functions specific to a triangle.
+          </li>
+          <li>
+            The Rectangle class is defined, also derived from the Shape class. It adds private data members breadth and length. It implements the initialize( ), computeArea( ), and computePerimeter( ) member functions specific to a rectangle.
+          </li>
+          <span><u>Main:</u> </span>
+          <li>
+            In the main( ) function, an object of the Triangle class named 't' and an object of the Rectangle class named 'r' are declared.
+          </li>
+          <li>
+            A pointer of type Shape named 's' is declared and initialized to point to the 't' object. The initialize( ), computeArea( ), and computePerimeter() member functions are called on the 's' pointer, which invokes the corresponding functions of the Triangle class.
+          </li>
+          <li>
+            The area and perimeter of the triangle are displayed using cout.
+          </li>
+          <li>
+            The 's' pointer is reassigned to point to the 'r' object. The initialize( ), computeArea( ), and computePerimeter( ) member functions are called on the 's' pointer, which invokes the corresponding functions of the Rectangle class.
+          </li>
+          <li>The area and perimeter of the rectangle are displayed using cout.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+          
+
+<div class="Ques row-sm-6 row-lg-12">
+  <p class="lead">
+    Question 16:  <br>
+    a) Write two function templates in C++ to  <br>
+    i) Sort the numbers  <br>
+    ii) To search a given number  <br>
+    Demonstrate the above functions on array of integers and double. <br>
+  </p>
+</div>
+<div class="Code">
+  <pre><code class="language-cpp">
+    #include &lt;iostream&gt;
+    using namespace std;
+    
+    template&lt;typename U&gt;
+    void sort(U* arr, int size)    // Insertion Sort
+    {
+      int j;
+      for(j=1;j&lt;size;j++)
+      {
+        int i=j-1;
+        U temp;
+        temp=arr[j];
+        while(i&gt;=0 && arr[i]&gt;temp)
+        {
+          arr[i+1] = arr[i];
+          i--;
+        }
+        arr[i+1] = temp;
+      }
+    }
+    
+    template&lt;typename U&gt;
+    int search(U* arr, int size)
+    {
+      U val;
+      int i;
+      cout &lt;&lt; "Enter the value to be searched" &lt;&lt; endl;
+      cin &gt;&gt; val;
+      for(i=0;i&lt;size;i++)
+        {
+          if(arr[i]==val)
+            return i;
+        }
+      return -1;
+    }
+    
+    int main()
+    {
+      int size, i;
+      cout &lt;&lt; "Enter the size of the array:" &lt;&lt; endl;
+      cin &gt;&gt; size;
+      int* arr = new int[size];       // Change datatype here
+      cout &lt;&lt; "Enter the elements of the array:"&lt;&lt;endl; 
+      for(i=0;i&lt;size;i++)
+        cin &gt;&gt; arr[i];
+    
+      int index = search(arr, size);
+      if(index == -1)
+        cout &lt;&lt; "The element is not present in the array" &lt;&lt; endl;
+      else
+        cout &lt;&lt; "The element is present at index " &lt;&lt; index &lt;&lt; endl;
+    
+      sort(arr, size);
+    
+      cout &lt;&lt; "The sorted array is" &lt;&lt; endl;
+      for(i=0;i&lt;size;i++)
+        cout &lt;&lt; arr[i] &lt;&lt; " ";
+    
+      delete []arr;
+      return 0;
+    }</code></pre>
+    
+    
+
+<div class="accordion" id="ques16b">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse16a" aria-expanded="false" aria-controls="collapse16a">
+        Explanation
+      </button>
+    </h2>
+    <div id="collapse16a" class="accordion-collapse collapse" data-bs-parent="#accordionExample16a">
+      <div class="accordion-body">
+        <strong>Let us discuss the solution to the problem.</strong>
+        <br> <br>
+        <ul>
+          <li>Two function templates are declared: `sort( )` and `search( )`. These templates are generic and can work with any type of array.</li>
+          <li>The `sort( )` function implements the insertion sort algorithm to sort the elements of the array in ascending order.</li>
+          <li>The `search( )` function takes an array and a value as input, and searches for the value in the array. It returns the index of the value if found, or -1 if not found.</li>
+          <span><u>Main:</u> </span>
+          <li>In the `main( )` function, the size of the array is input by the user.</li>
+          <li>An array `arr` of the specified size is declared.</li>
+          <li>The elements of the array are input by the user.</li>
+          <li>The `search( )` function is called to search for a value in the array. If the value is found, the index is displayed. Otherwise, a message is displayed indicating that the element is not present.</li>
+          <li>The `sort( )` function is called to sort the elements of the array in ascending order.</li>
+          <li>The sorted array is displayed using a `for` loop.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="Ques row-sm-6 row-lg-12">
+  <p class="lead">
+    Question 16:  <br>
+    b)A point on the 2D can be represented by two numbers: an x co-ordinate and a y coordinate. 
+    The sum of two points can be defined as a new point whose x co-ordinate is the sum of x co-ordinates of both points and same for y co-ordinates. 
+    <br>Using function template, find the third point in C++.
+  </p>
+</div>
+<div class="Code">
+  <pre><code class="language-cpp">
+    #include&lt;iostream&gt;
+    using namespace std;
+    
+    template&lt;typename T&gt;
+    void thirdPoint(T x1, T x2, T y1, T y2)
+    {
+      T tx = x1 + x2;    // x-coordinate of third point
+      T ty = y1 + y2;    // y-coordinate of third point
+      cout &lt;&lt; "Third Point: " &lt;&lt; "(" &lt;&lt; tx &lt;&lt; "," &lt;&lt; ty &lt;&lt; ")" &lt;&lt; endl;
+    }
+    
+    int main()
+    {
+      float x1, x2, y1, y2; // Change here to check for different datatypes
+      cout &lt;&lt; "Enter the x and y coordinates of the first point" &lt;&lt; endl;
+      cin &gt;&gt; x1 &gt;&gt; y1;
+      cout &lt;&lt; "Enter the x and y coordinates of the second point" &lt;&lt; endl;
+      cin &gt;&gt; x2 &gt;&gt; y2;
+      thirdPoint(x1, x2, y1, y2);
+      return 0;
+    }
+    </code></pre>
+
+<div class="accordion" id="ques17a">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse16b" aria-expanded="false" aria-controls="collapse16b">
+        Explanation
+      </button>
+    </h2>
+    <div id="collapse16b" class="accordion-collapse collapse" data-bs-parent="#accordionExample16b">
+      <div class="accordion-body">
+        <strong>Let us discuss the solution to the problem.</strong>
+        <br> <br>
+        <ul>
+          <li>A function template thirdPoint( ) is defined to calculate the coordinates of the third point.</li>
+          <span><u>Main:</u> </span>
+          <li>In the main( ) function, variables 'x1', 'x2', 'y1', and 'y2' are declared to store the coordinates of the first and second points.</li>
+          <li>The user is prompted to input the x and y coordinates of the first point.</li>
+          <li>The user is prompted to input the x and y coordinates of the second point.</li>
+          <li>The thirdPoint( ) function is called with the provided coordinates to calculate the coordinates of the third point.</li>
+          <li>The coordinates of the third point are displayed on the console.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="Ques row-sm-6 row-lg-12">
+  <p class="lead">
+    Question 17:  <br>
+    a) Write a simple calculator using class template in C++
+  </p>
+</div>
+<div class="Code">
+  <pre><code class="language-cpp">
+    #include &lt;iostream&gt;
+    using namespace std;
+    
+    template&lt;class T&gt;
+    class Calculate
+    {
+    public:
+      T a, b;            // T will be replaced by whatever datatype was mentioned in the main function
+      Calculate(T n1, T n2);
+      T addition();
+      T subtraction();
+      T multiplication();
+      T division();
+    };
+    
+    template&lt;class T&gt;
+    Calculate&lt;T&gt;::Calculate(T n1, T n2)
+    {
+      a = n1;
+      b = n2;
+    }
+    
+    template&lt;class T&gt;
+    T Calculate&lt;T&gt;::addition()
+    {
+      return a + b;
+    }
+    
+    template&lt;class T&gt;
+    T Calculate&lt;T&gt;::subtraction()
+    {
+      return a - b;
+    }
+    
+    template&lt;class T&gt;
+    T Calculate&lt;T&gt;::multiplication()
+    {
+      return a * b;
+    }
+    
+    template&lt;class T&gt;
+    T Calculate&lt;T&gt;::division()
+    {
+      return a / b;
+    }
+    
+    int main()
+    {
+      float a, b;                                           // Change here
+      int option;
+      cout &lt;&lt; "Welcome to the Simple Calculator using Templates" &lt;&lt; endl;
+      cout &lt;&lt; "Enter the numbers:" &lt;&lt; endl;
+      cin &gt;&gt; a &gt;&gt; b;
+      Calculate&lt;float&gt; c1(a, b);                          // Also change the datatype here to make the functions valid for any data type
+      cout &lt;&lt; "Enter the operation to be performed:" &lt;&lt; endl;
+      cout &lt;&lt; "1. Addition" &lt;&lt; endl &lt;&lt; "2. Subtraction" &lt;&lt; endl &lt;&lt; "3. Multiplication" &lt;&lt; endl &lt;&lt; "4. Division" &lt;&lt; endl;
+      cin &gt;&gt; option;
+      switch (option)
+      {
+        case 1:
+        {
+          cout &lt;&lt; "The sum is " &lt;&lt; c1.addition();
+          break;
+        }
+        case 2:
+        {
+          cout &lt;&lt; "The difference is " &lt;&lt; c1.subtraction();
+          break;
+        }
+        case 3:
+        {
+          cout &lt;&lt; "The product is " &lt;&lt; c1.multiplication();
+          break;
+        }
+        case 4:
+        {
+          if (c1.b == 0)
+          {
+            cout &lt;&lt; "Division by zero undefined" &lt;&lt; endl;
+            return -1;
+          }
+          cout &lt;&lt; "The quotient is " &lt;&lt; c1.division();
+          break;
+        }
+        default:
+        {
+          cout &lt;&lt; "Please enter a valid option" &lt;&lt; endl;
+          break;
+        }
+      }
+      return 0;
+    }
+    </code></pre>
+
+<div class="accordion" id="ques17b">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse17a" aria-expanded="false" aria-controls="collapse17a">
+        Explanation
+      </button>
+    </h2>
+    <div id="collapse17a" class="accordion-collapse collapse" data-bs-parent="#accordionExample17a">
+      <div class="accordion-body">
+        <strong>Let us discuss the solution to the problem.</strong>
+        <br> <br>
+        <ul>
+          <li>The code demonstrates the usage of templates to make class methods and variables work for any data type.</li>
+          <li>A class template `Calculate` is defined, which contains methods for performing basic mathematical operations.</li>
+          <li>The `Calculate` class has template parameters to allow flexibility in data types.</li>
+          <li>Methods such as addition( ), subtraction( ), multiplication( ), and division( ) perform the respective mathematical operations using the template type.</li>
+          <span><u>Main:</u> </span>
+          <li>In the main( ) function, the user is prompted to input two numbers.</li>
+          <li>An object `c1` of type `Calculate<float>` is created, using `float` as the template type.</li>
+          <li>The user is prompted to select an operation to perform: addition, subtraction, multiplication, or division.</li>
+          <li>Based on the user's choice, the respective method is called on the `c1` object.</li>
+          <li>The result of the operation is displayed on the console.</li>
+          <li>If the user selects division and the second number is 0, a division by zero error is handled.</li>
+          <li>The program ends by returning 0.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="Ques row-sm-6 row-lg-12">
+  <p class="lead">
+    Question 17:  <br>
+    b) Write a program implementing stack and its operations using template class.
+  </p>
+</div>
+<div class="Code">
+  <pre><code class="language-cpp">
+    #include &lt;iostream&gt;
+    using namespace std;
+    
+    template&lt;class T&gt;
+    class Stack
+    {
+    private:
+      int top;
+      int size;
+      T* arr;
+    public:
+      Stack(int s);
+      void push(T num);
+      T pop();
+      void display();
+    };
+    
+    template&lt;class T&gt;
+    Stack&lt;T&gt;::Stack(int s)
+    {
+      top = -1;
+      size = s;
+      arr = new T[size];
+    }
+    
+    template&lt;class T&gt;
+    void Stack&lt;T&gt;::push(T num)
+    {
+      if (top == size - 1)
+      {
+        cout &lt;&lt; "Stack overflow" &lt;&lt; endl;
+        return;
+      }
+      top++;
+      arr[top] = num;
+    }
+    
+    template&lt;class T&gt;
+    T Stack&lt;T&gt;::pop()
+    {
+      T x = -1;
+      if (top == -1)
+        cout &lt;&lt; "Stack Underflow" &lt;&lt; endl;
+      else
+      {
+        x = arr[top];
+        top--;
+      }
+      return x;
+    }
+    
+    template&lt;class T&gt;
+    void Stack&lt;T&gt;::display()
+    {
+      int i;
+      for (i = top; i &gt;= 0; i--)
+      {
+        cout &lt;&lt; arr[i] &lt;&lt; endl;
+      }
+      cout &lt;&lt; endl;
+    }
+    
+    int main()
+    {
+      Stack&lt;char&gt; s(10);
+      s.push('a');
+      s.push('b');
+      s.push('c');
+      s.display();
+      s.pop();
+      cout &lt;&lt;endl;
+      s.display();
+      s.pop();
+      cout &lt;&lt;endl;
+      s.display();
+      return 0;
+    }
+    </code></pre>
+
+<div class="accordion" id="ques18">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse17b" aria-expanded="false" aria-controls="collapse17b">
+        Explanation
+      </button>
+    </h2>
+    <div id="collapse17b" class="accordion-collapse collapse" data-bs-parent="#accordionExample17b">
+      <div class="accordion-body">
+        <strong>Let us discuss the solution to the problem.</strong>
+        <br> <br>
+        <ul>
+          <li>The code demonstrates the implementation of a stack using a class template.</li>
+          <li>A class template 'Stack' is defined, which represents a stack data structure.</li>
+          <li>The `Stack` class has private member variables 'top', 'size', and 'arr', representing the top index, size of the stack, and an array to store the elements, respectively.</li>
+          <li>A constructor Stack(int s) is defined to initialize the stack with a given size.</li>
+          <li>The push( ) method is used to insert an element into the stack.</li>
+          <li>The pop( ) method is used to remove and return the top element from the stack.</li>
+          <li>The display( ) method is used to print the elements of the stack.</li>
+          <span><u>Main:</u> </span>
+          <li>In the main( ) function, an instance of `Stack` is created with a character data type.</li>
+          <li>Elements 'a', 'b', and 'c' are pushed onto the stack using the push( ) method.</li>
+          <li>The contents of the stack are displayed using the display() method.</li>
+          <li>An element is popped from the stack using the pop( ) method.</li>
+          <li>The updated contents of the stack are displayed again.</li>
+          <li>Another element is popped from the stack, and the final contents of the stack are displayed.</li>
+          <li>The program ends by returning 0.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="Ques row-sm-6 row-lg-12">
+  <p class="lead">
+    Question 18:  <br>
+    Write a C++ program with the following: <br>
+    a. A function to read two double type numbers from keyboard.   <br>
+    b. A function to calculate the division of these two numbers.   <br>
+    c. A try block to throw an exception when a wrong type of data is keyed in.  <br>
+    d. A try block to detect and throw an exception if the condition ―divide-by-zero occurs. <br>
+    e. Appropriate catch block to handle the exceptions thrown.  <br>
+  </p>
+</div>
+<div class="Code">
+  <pre><code class="language-cpp">
+    #include &lt;iostream&gt;
+    using namespace std;
+    
+    void division(float a, float b)
+    {
+      try
+      {
+        if (b == 0)
+          throw 1;
+        else
+          cout &lt;&lt; "The quotient of the 2 numbers is " &lt;&lt; a / b &lt;&lt; endl;
+      }
+      catch (int)
+      {
+        cout &lt;&lt; "Division by zero undefined" &lt;&lt; endl;
+      }
+    }
+    
+    void readNums()
+    {
+      float a, b;
+      cout &lt;&lt; "Enter the 2 floating point numbers:" &lt;&lt; endl;
+      try
+      {
+        if (cin &gt;&gt; a &gt;&gt; b)
+        {
+          division(a, b);
+        }
+        else
+          throw 5;
+      }
+      catch (int)
+      {
+        cout &lt;&lt; "Invalid input: Not a float" &lt;&lt; endl;
+      }
+    }
+    
+    int main()
+    {
+      readNums();
+      return 0;
+    }
+    </code></pre>
+
+<div class="accordion" id="ques19">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+        Explanation
+      </button>
+    </h2>
+    <div id="collapse18" class="accordion-collapse collapse" data-bs-parent="#accordionExample18">
+      <div class="accordion-body">
+        <strong>Let us discuss the solution to the problem.</strong>
+        <br> <br>
+        <ul>
+          <li>The code demonstrates the use of exception handling for division by zero and invalid input.</li>
+          <li>A function 'division' is defined to perform the division operation between two floating-point numbers.</li>
+          <li>Inside the 'division' function, a 'try' block is used to handle exceptions.</li>
+          <li>If the denominator 'b' is equal to zero, an exception of type 'int' with value '1' is thrown.</li>
+          <li>Otherwise, the division is performed, and the quotient is displayed.</li>
+          <li>In the 'catch' block, the exception of type 'int' is caught and a message for division by zero is displayed.</li>
+          <li>Another function 'readNums' is defined to read two floating-point numbers from the user.</li>
+          <li>Inside the 'readNums' function, a 'try' block is used to handle exceptions.</li>
+          <li>The 'cin' operator is used to read two numbers 'a' and 'b'.</li>
+          <li>If the input is successful, the 'division' function is called with the two numbers.</li>
+          <li>If the input is invalid (not a float), an exception of type 'int' with value '5' is thrown.</li>
+          <li>In the 'catch' block, the exception of type 'int' is caught, and a message for invalid input is displayed.</li>
+          <span><u>Main:</u> </span>
+          <li>In the 'main' function, the 'readNums' function is called.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="Ques row-sm-6 row-lg-12">
+  <p class="lead">
+    Question 19:  <br>
+    a) Perform these basic vector operation using Standard Template Library: <br>
+    i) Find the number of elements in the vector. <br>
+    ii) Check whether the vector is empty or not.  <br>
+    iii) Insert some elements into the vector. <br>
+    iv) Remove the element at a particular position.  <br>
+    v) Find the index of a particular element in a vector. <br> <br>
+    b) Make a vector of random numbers and sort it in descending order using STL and
+    also find its sum.
+  </p>
+</div>
+<div class="Code">
+  <pre><code class="language-cpp">
+    #include&lt;iostream&gt;
+    #include&lt;vector&gt;
+    #include&lt;algorithm&gt;
+    #include&lt;numeric&gt;
+    using namespace std;
+    
+    int main()
+    {
+      vector&lt;int&gt; v{1,2,3,4,5};
+      cout&lt;&lt;v.size()&lt;&lt;endl;   //Size
+      cout&lt;&lt;v.empty()&lt;&lt;endl;  //Returns 1 if vector is empty otherwise 0
+      v.push_back(6);  //Inserting some elements into the vector
+      v.push_back(7);
+      v.push_back(8);
+      v.push_back(9);
+      cout&lt;&lt;v.size()&lt;&lt;endl;  
+    
+      v.erase(v.begin()+4);   // Removes the element at index 4
+      
+      //Using a for loop to print each element at the particular index
+      for(int i=0;i&lt;8;i++)
+          cout&lt;&lt;v.at(i)&lt;&lt;" ";
+      cout&lt;&lt;endl;
+      
+      auto iter = find(v.begin(),v.end(),7);
+      int index = distance(v.begin(), iter);
+      cout&lt;&lt;"Index of element 7 in the vector is "&lt;&lt;index&lt;&lt;endl;
+      cout&lt;&lt;endl;
+    
+      vector&lt;float&gt; vctr(7);
+      vctr={12,34,16,190,3,67,2};
+    
+      //Using an iterator to print values- Standard Way 
+      cout&lt;&lt;"Before sorting:"&lt;&lt;endl;
+      vector&lt;float&gt;::iterator i;
+      for(i=vctr.begin();i!=vctr.end();++i)
+        cout&lt;&lt;*i&lt;&lt;" ";
+      cout&lt;&lt;endl;
+      
+      sort(vctr.begin(),vctr.end(),greater&lt;float&gt;());
+      //greater&lt;int&gt;() specifies a custom comparator that compares elements in reverse order
+    
+      cout&lt;&lt;"After sorting:"&lt;&lt;endl;
+      for(i=vctr.begin();i!=vctr.end();++i)
+        cout&lt;&lt;*i&lt;&lt;" ";
+      cout&lt;&lt;endl;
+    
+      float sum= accumulate(vctr.begin(),vctr.end(),0);
+      cout&lt;&lt;"Sum of vector elements = "&lt;&lt;sum&lt;&lt;endl;
+      return 0;
+    }
+    </code></pre>
+
+<div class="accordion">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+        Explanation
+      </button>
+    </h2>
+    <div id="collapse19" class="accordion-collapse collapse" data-bs-parent="#accordionExample19">
+      <div class="accordion-body">
+        <strong>Let us discuss the solution to the problem.</strong>
+        <br> <br>
+        <ul>
+          <li>A vector 'v' is declared and initialized with integer values.</li>
+          <li>The size( ) function is used to get the size of the vector, and it is printed.</li>
+          <li>The empty( ) function is used to check if the vector is empty or not, and it is printed.</li>
+          <li>Elements '6', '7', '8', and '9' are inserted into the vector using the push_back( ) function.</li>
+          <li>The updated size of the vector is printed.</li>
+          <li>An element at index '4' is removed from the vector using the erase( ) function.</li>
+          <li>A for loop is used to print each element in the vector using the at( ) function.</li>
+          <li>The find( ) function is used to search for the element '7' in the vector.</li>
+          <li>The distance( ) function is used to calculate the index of the found element.</li>
+          <li>The index of the element '7' is printed.</li>
+          <li>A new vector 'vctr' of float type is declared and initialized with float values.</li>
+          <li>An iterator 'i' is declared for iterating over the elements of the 'vctr' vector.</li>
+          <li>A for loop is used to print each element of the vector using the iterator.</li>
+          <li>The sort( ) function is used to sort the elements of the vector in descending order.<br> It normally takes 2 parameters which are iterators to the starting and ending of the array, 3rd parameter is optional which is a custom comparator function.<br>In this case the custom comparator used is 'greater< float>' which compares elements in descending order.</float></li>
+          <li>The sorted elements of the vector are printed using the iterator.</li>
+          <li>The accumulate( ) function is used to calculate the sum of all elements in the vector. <br>It takes 3 parameters, iterator to the starting of the vector, iterator to the ending of a vector and the initial value.</li>
+          <li>The sum of the vector elements is printed.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+</div>
+
+  <footer id="connect" class="text-center text-lg-start" style="background-color: #0A4D68;">
+    <p>Check out my other projects/ connect with me at:</p>
+    <div class="container d-flex justify-content-center">
+      <button type="button" class="btn btn-primary btn-md btn-floating mx-2" style="background-color: #6514e0;">
+        <a class="custom-link" href="https://github.com/ShadowSlayer03"><img src="./github_inverted_image.png" alt="github_logo"> Github</a>
+      </button>
+      <button type="button" class="btn btn-primary btn-md btn-floating mx-2" style="background-color: #6514e0;">
+        <a class="custom-link" href="https://replit.com/@ShadowSlayer224"><img src="./replit_logo.png" alt="replit_logo"> Replit</a> 
+      </button>
+      <button type="button" class="btn btn-primary btn-md btn-floating mx-2" style="background-color: #6514e0;">
+        <a class="custom-link" href="https://www.linkedin.com/in/arjun-nambiar-439aaa255/"> <img src="./linkedin_logo.png" alt="linkedin_logo"> LinkedIn</a>
+      </button>
+      <button type="button" class="btn btn-primary btn-md btn-floating mx-2" style="background-color: #6514e0;">
+        <a class="custom-link" href="https://twitter.com/ArjunNambiar03"><img src="./twitter_logo.png" alt="twitter-logo"> Twitter</a> 
+      </button>
+      </div>
+      <br>
+      <p id="credits">Project owned and maintained by Arjun R Nambiar.</p>
+      <div id="copyright" class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <p>© All rights reserved |
+        <a class="text-white" href="../index.html">COOL CODE REALM</a> </p>
+      </div>
+  </footer>
+
+<script src="./jquery-3.7.0.min.js"></script>
+<script>
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 0) {
+        $('.navbar').addClass('navbar-scrolled');
+      } else {
+        $('.navbar').removeClass('navbar-scrolled');
+      }
+    });
+  </script>
+  <script src="./prism.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
