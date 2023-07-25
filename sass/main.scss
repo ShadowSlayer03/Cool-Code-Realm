@@ -20,6 +20,13 @@ $gutter-vertical-small: 60px;
     }
 }
 
+@mixin flex-center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 //MEDIA QUERIES
 // 0-600px: Phones
 // 600-900px: Tablet portrait
@@ -564,7 +571,7 @@ html{
 
 //Row for images in about section
 
-.row
+.custom-row
 {
     max-width: $grid-width;
     margin: 0 0 0 8rem;
@@ -747,55 +754,60 @@ html{
     }
 }
 
+.row-wrapper {
+    @include flex-center;
+}
+
 //Row for cards in the explore codes section
 .cards
 {
     &__row
     {
-    max-width: $grid-width;
-    margin: auto;
-    color: $color-primary-dark;
-
-    &:not(:last-child)
-    {
-        margin-bottom: $gutter-vertical;
-
-        
-         @include respond(tab-portrait)
-         {
-             margin-bottom: $gutter-vertical-small;
-         }
-    }
-
-     @include respond(tab-portrait)
-         {
-             max-width: 50rem;
-         }
-
-    @include clearfix;
-
-    [class^="col-"]
-    {
-        float:left;
+        max-width: $grid-width;
+        margin: 0 0 0 0;
+        color: $color-primary-dark;
 
         &:not(:last-child)
         {
-            margin-right: $gutter-horizontal;
+            margin-bottom: $gutter-vertical;
 
-             @include respond(tab-portrait)
-             {
-                 margin-right: 0;
-                 margin-bottom: $gutter-vertical-small;
-             }
-        }
-          @include respond(tab-portrait)
-          {
-              width: 100% !important;
-          }
-
+            
+            @include respond(tab-portrait)
+            {
+                margin-bottom: $gutter-vertical-small;
+            }
         }
 
-    @include respond(phone)
+        @include respond(tab-portrait)
+        {
+            max-width: 50rem;
+        }
+
+        @include clearfix;
+
+        [class^="col-"]
+        {
+            float:left;
+
+            &:not(:last-child)
+            {
+                margin-right: $gutter-horizontal;
+
+                // @include respond(tab-portrait)
+                // {
+                //     margin-right: 0;
+                //     margin-bottom: $gutter-vertical-small;
+                // }
+            }
+            @include respond(tab-portrait)
+            {
+                width: 100% !important;
+                margin-bottom: $gutter-vertical-small;
+            }
+
+        }
+
+        @include respond(phone)
         {
             margin: 0;
             padding: 0;
@@ -806,6 +818,7 @@ html{
     &__col-1-of-2 
     {
         width: calc((100% - #{$gutter-horizontal}) / 2);
+        @include flex-center;
     }
 }
 
@@ -818,33 +831,33 @@ html{
     height: 60rem;
     width: 38rem;
 
-    //MEDIA QUERIES
-      @include respond(desktop)
-      {
-          margin-bottom: 15rem;
-          margin-left: 38rem;
-      }
-     @include respond(medium-screen)
-     {
-         margin-bottom: 15rem;
-         margin-left: 33rem;
-     }
+    // //MEDIA QUERIES
+    //   @include respond(desktop)
+    //   {
+    //       margin-bottom: 15rem;
+    //       margin-left: 38rem;
+    //   }
+    //  @include respond(medium-screen)
+    //  {
+    //      margin-bottom: 15rem;
+    //      margin-left: 33rem;
+    //  }
 
-     @include respond(tab-landscape)
-      {
-          margin-bottom: 15rem;
-          margin-left: 20rem;
-      }
-     @include respond(tab-portrait)
-     {
-         margin-bottom: 15rem;
-         margin-left: 6.5rem;
-     }
-     @include respond(phone)
-     {
-         margin-left: 2rem;
-         margin-bottom: 15rem;
-     }
+    //  @include respond(tab-landscape)
+    //   {
+    //       margin-bottom: 15rem;
+    //       margin-left: 20rem;
+    //   }
+    //  @include respond(tab-portrait)
+    //  {
+    //      margin-bottom: 15rem;
+    //      margin-left: 6.5rem;
+    //  }
+    //  @include respond(phone)
+    //  {
+    //      margin-left: 2rem;
+    //      margin-bottom: 15rem;
+    //  }
      
 
     &__side
