@@ -340,22 +340,22 @@ html {
 .u-center-text {
   text-align: center; }
 
-.row {
+.custom-row {
   max-width: 1400px;
   margin: 0 0 0 8rem;
   color: #0A4D68; }
-  .row:not(:last-child) {
+  .custom-row:not(:last-child) {
     margin-bottom: 80px; }
-  .row::after {
+  .custom-row::after {
     content: "";
     display: table;
     clear: both; }
-  .row [class^="col-"] {
+  .custom-row [class^="col-"] {
     float: left; }
-    .row [class^="col-"]:not(:last-child) {
+    .custom-row [class^="col-"]:not(:last-child) {
       margin-right: 150px; }
   @media (max-width: 37.5em) {
-    .row {
+    .custom-row {
       margin: 0;
       padding: 0; } }
 
@@ -455,9 +455,14 @@ html {
       margin-left: 0rem;
       padding-left: 7rem; } }
 
+.row-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .cards__row {
   max-width: 1400px;
-  margin: 0 0 0 14rem;
+  margin: 0 0 0 0;
   color: #0A4D68; }
   .cards__row:not(:last-child) {
     margin-bottom: 80px; }
@@ -475,20 +480,20 @@ html {
     float: left; }
     .cards__row [class^="col-"]:not(:last-child) {
       margin-right: 150px; }
-      @media (max-width: 56.25em) {
-        .cards__row [class^="col-"]:not(:last-child) {
-          margin-right: 0;
-          margin-bottom: 60px; } }
     @media (max-width: 56.25em) {
       .cards__row [class^="col-"] {
-        width: 100% !important; } }
+        width: 100% !important;
+        margin-bottom: 60px; } }
   @media (max-width: 37.5em) {
     .cards__row {
       margin: 0;
       padding: 0; } }
 
 .cards__col-1-of-2 {
-  width: calc((100% - 150px) / 2); }
+  width: calc((100% - 150px) / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .card {
   perspective: 240rem;
@@ -496,26 +501,6 @@ html {
   position: relative;
   height: 60rem;
   width: 38rem; }
-  @media (min-width: 112.5em) {
-    .card {
-      margin-bottom: 15rem;
-      margin-left: 38rem; } }
-  @media (max-width: 112.5em) {
-    .card {
-      margin-bottom: 15rem;
-      margin-left: 33rem; } }
-  @media (max-width: 75em) {
-    .card {
-      margin-bottom: 15rem;
-      margin-left: 20rem; } }
-  @media (max-width: 56.25em) {
-    .card {
-      margin-bottom: 15rem;
-      margin-left: 6.5rem; } }
-  @media (max-width: 37.5em) {
-    .card {
-      margin-left: 2rem;
-      margin-bottom: 15rem; } }
   .card__side {
     background-color: #dcd8d8;
     color: #0A4D68;
