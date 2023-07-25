@@ -3,15 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- Icon -->
-    <link rel="shortcut icon" href="images/favicon_io/favicon.ico" type="image/x-icon">
-
-    <!-- Space Grotesk Font -->
+    <link rel="stylesheet" href="./public/css/styles.css">
+    <link rel="shortcut icon" href="../dist/public/images/favicon_io/android-chrome-512x512.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Epilogue&family=Space+Grotesk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Cool Code Realm</title>
 </head>
 <body>
@@ -38,7 +33,7 @@
        <div class="logo-box">
         <div class="logo-container">
             <a href="#" class="logo-link">
-              <img src="images/oop_codes_page/logo.png" alt="small-logo" class="condensed-logo">
+              <img src="./public/images/oop_codes_page/logo.png" alt="small-logo" class="condensed-logo">
             </a>
           </div>
        </div>
@@ -76,8 +71,8 @@
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="./images/coding-languages.jpg" alt="coding-image" class="composition__photo composition__photo--p1">
-                        <img src="./images/code-editor-img.jpg" alt="code-editor-image" class="composition__photo composition__photo--p2">
+                        <img src="./public/images/coding-languages.jpg" alt="coding-image" class="composition__photo composition__photo--p1">
+                        <img src="./public/images/code-editor-img.jpg" alt="code-editor-image" class="composition__photo composition__photo--p2">
                     </div>
                 </div>
             </div>
@@ -107,13 +102,13 @@
                            <div class="card__call-to-action">
                                 <p>Find OOP lab programs and their explanations by clicking on the button:</p>
                                 <div class="card__call-to-action-button">
-                                    <a href="/oop_codes" class="btn btn-white btn-animated">Click Here</a>
+                                    <a href="./oop_codes.html" class="btn btn-white btn-animated">Click Here</a>
                                 </div>
                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="cards__col-1-of-2">
+                <div class="col-1-of-2">
                     <div class="card">
                         <div class="card__side card__side-front">
                             <div class="card__picture card__picture-2">
@@ -129,7 +124,7 @@
                             <div class="card__call-to-action">
                                 <p>Find ADA lab programs and their explanations by clicking on the button:</p>
                                 <div class="card__call-to-action-button">
-                                    <a href="/coming_soon" class="btn btn-white btn-animated">Click Here</a>
+                                    <a href="./coming_soon_page.html" class="btn btn-white btn-animated">Click Here</a>
                                 </div>
                            </div>
                         </div>
@@ -141,12 +136,27 @@
     </main>
 
     <footer class="footer" id="ftr">
+        <div class="footer__logo-box">
+            <img src="./public/images/ccr_green_space_grotesk.png" alt="cool-code-realm-full-logo" class="footer__logo">
+        </div>
+        <div class="footer-row">
+        <div class="col-1-of-2-first">
+            <div class="footer__navigation">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#home" class="footer__link">Home</a></li>
+                    <li class="footer__item"><a href="#about" class="footer__link">About</a></li>
+                    <li class="footer__item"><a href="#explr-cde" class="footer__link">Explore Codes</a></li>
+                    <li class="footer__item"><a href="#ftr" class="footer__link">Connect</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-1-of-2-second">
         <div class="footer__socials_palette">
             <div class="main">
                 <div class="up">
                 <a href="https://replit.com/@ShadowSlayer224">
                   <button class="card1">
-                    <img src="images/New_Replit_Logo.svg" alt="replit-logo" class="replit">
+                    <img src="./public/images/New_Replit_Logo.svg" alt="replit-logo" class="replit">
                 </a>
                   </button>
                   <a href="https://twitter.com/ArjunNambiar03">
@@ -167,26 +177,15 @@
                   </button>
                 </a>
                 </div>
-              </div>
-        </div>
-        <div class="footer__logo-box">
-            <img src="images/ccr_green_space_grotesk.png" alt="cool-code-realm-full-logo" class="footer__logo">
-        </div>
-        <div class="footer-row">
-        <div class="col-1-of-2-first">
-            <div class="footer__navigation">
-                <ul class="footer__list">
-                    <li class="footer__item"><a href="#home" class="footer__link">Home</a></li>
-                    <li class="footer__item"><a href="#about" class="footer__link">About</a></li>
-                    <li class="footer__item"><a href="#explr-cde" class="footer__link">Explore Codes</a></li>
-                    <li class="footer__item"><a href="#ftr" class="footer__link">Connect</a></li>
-                </ul>
             </div>
         </div>
-        <div class="col-1-of-2-second">
-            <p class="footer__copyright-text">
-                Share Knowledge, Grow Together! <br>This website is developed and maintained by <br><div id="dev-name">Arjun R Nambiar</div>
-            </p>
+        </div>
+        <div class="col-1-of-2-third">
+            <ul class="footer__copyright-text">
+                <li>Share Knowledge, Grow Together!</li>
+                <li>This website is developed and maintained by:</li>
+                <li>Arjun Ramesh Nambiar</li>
+            </ul>
         </div>
     </div>
     <div style="text-align: center; margin-top: 3rem;">
