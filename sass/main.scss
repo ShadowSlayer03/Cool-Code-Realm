@@ -278,8 +278,8 @@ html{
 
 .header{
     height: 95vh;
-    width: 100vw;
-    background-image:linear-gradient(to right bottom,#0a4d68d0,#088295c9) ,url(./images/sl_031420_28950_10.jpg);
+    width: 100%;
+    background-image: linear-gradient(to right bottom, #0a4d68d0, #088295c9), url(../images/sl_031420_28950_10.jpg);    
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0, 100% 0,100% 80vh,0 100%);
@@ -492,7 +492,7 @@ html{
     position: relative;
     z-index: 30;
     clip-path: polygon(0 0, 100% 0,100% 90%,0 100%);
-    width: 100vw;
+    width: 100%;
 
     @include respond(phone)
     {
@@ -516,7 +516,7 @@ html{
     text-transform: uppercase;
     background-image: linear-gradient(to right,#0a4d68d0,#088295c9);
     display: inline-block;
-    --webkit-background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     letter-spacing: 2px;
     transition: all .2s;
@@ -544,7 +544,7 @@ html{
         font-weight: 700;
         text-transform: uppercase;
         background-image: linear-gradient(to right,$color-light,#d3d2d2);
-        --webkit-background-clip: text;
+        -webkit-background-clip: text;
         color: transparent;
         display: inline-block;
         letter-spacing: 2px;
@@ -738,7 +738,7 @@ html{
     padding: 85rem 10rem 15rem 10rem;
     margin-top: -80rem;
     position: relative;
-    width: 100vw;
+    width: 100%;
 
     @include respond(tab-portrait)
     {
@@ -753,7 +753,7 @@ html{
     &__row
     {
     max-width: $grid-width;
-    margin: 0 0 0 14rem;
+    margin: auto;
     color: $color-primary-dark;
 
     &:not(:last-child)
@@ -864,10 +864,10 @@ html{
 
         //MEDIA QUERIES
 
-        // &-front
-        // {
-        //     // background-color: orangered;
-        // }
+        &-front
+        {
+            // background-color: orangered;
+        }
 
         &-back
         {
@@ -987,20 +987,25 @@ html{
 .footer
 {
     background-color: $color-primary-dark;
-    padding: 3rem 2rem 3rem 2rem;
+    padding: 3rem;
     font-size: 1.55rem;
-    width: 100vw;
+    width: 100%;
 
     &__logo-box
     {
         text-align: center;
         margin-bottom: 8rem;
+        @include respond(phone)
+        {
+            position: relative;
+            right: 2.5rem;
+        }
     }
 
     &__logo
     {
-        height: 110px;
-        width: 400px;
+        height: 11rem;
+        width: 40rem;
         border-radius: 20px;
     }
 
@@ -1009,6 +1014,10 @@ html{
         border-top: 1px solid rgb(207, 205, 205);
         padding-top: 1rem;
         display: inline-block;
+        @include respond(phone)
+        {
+            width: 10rem;
+        }
     }
 
     &-row
@@ -1016,7 +1025,7 @@ html{
        display: flex;
        justify-content: center;
        margin: 0;
-       gap: 35rem;
+       gap: 7rem;
     }
 
     &__list
@@ -1062,30 +1071,25 @@ html{
         border-top: 1px solid rgb(207, 205, 205);
         padding-top: 1rem;
         display: inline-block;
-        text-align: center;
+        list-style-type: none;
+        text-align: left;
     }
 
     &__socials_palette
     {
-        position: absolute;
-        left: 44%;
-        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
-.col-1-of-2-first
-{
-    align-self: flex-start;
-    margin-left: 2rem;
-}
 
-
-#dev-name
-{
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
+// #dev-name
+// {
+//     text-align: left;
+//     margin: 0;
+//     padding: 0;
+// }
 
 // Socials Palette
 
@@ -1095,7 +1099,8 @@ html{
     gap: 0.5em;
   }
   
-  .up {
+  .up 
+  {
     display: flex;
     flex-direction: row;
     gap: 0.5em;
@@ -1108,8 +1113,8 @@ html{
   }
   
   .card1 {
-    width: 90px;
-    height: 90px;
+    width: 8rem;
+    height: 8rem;
     outline: none;
     border: none;
     background: $color-light;
@@ -1125,8 +1130,8 @@ html{
   }
   
   .card2 {
-    width: 90px;
-    height: 90px;
+    width: 8rem;
+    height: 8rem;
     outline: none;
     border: none;
     background: $color-light;;
@@ -1142,8 +1147,8 @@ html{
   }
   
   .card3 {
-    width: 90px;
-    height: 90px;
+    width: 8rem;
+    height: 8rem;
     outline: none;
     border: none;
     background: $color-light;;
@@ -1160,8 +1165,8 @@ html{
   }
   
   .card4 {
-    width: 90px;
-    height: 90px;
+    width: 8rem;
+    height: 8rem;
     outline: none;
     border: none;
     background: $color-light;;
@@ -1216,11 +1221,3 @@ html{
     background-color: #0c0c0c;
   }
   
-
-
-  
-
-
-
-
-
