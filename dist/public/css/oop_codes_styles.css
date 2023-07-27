@@ -7,7 +7,7 @@
 
 body{
     background-color: #088395;
-    font-family: 'Space Grotesk';
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 20px;
 }
 
@@ -240,11 +240,11 @@ h6,
       }
 
 #about{
-    margin-bottom: 90px;
+    margin: 3vh 4vw;
 }   
 
 #about-para{
-    margin-top: 50px;
+    margin: 30px 30px 30px 0;
     column-count: 1;
 } 
 
@@ -482,7 +482,7 @@ ul span{
 }
 
 footer{
-  padding-top: 40px;
+  padding: 40px;
   width: 100%;
 }
 
