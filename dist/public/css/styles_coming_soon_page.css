@@ -33,6 +33,16 @@ video.bg-video {
   z-index: 0;
 }
 
+@media (pointer: coarse) and (hover: none) {
+  body {
+    background: url("../assets/img/bg-mobile-fallback.jpg") #c9901e no-repeat center center scroll;
+    background-size: cover;
+  }
+  body video {
+    display: none;
+  }
+}
+
 .masthead {
   position: relative;
   overflow: hidden;

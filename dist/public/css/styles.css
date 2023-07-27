@@ -142,8 +142,8 @@ html {
 
 .header {
   height: 95vh;
-  width: 100%;
-  background-image: linear-gradient(to right bottom, #0a4d68d0, #088295c9), url(../images/sl_031420_28950_10.jpg);
+  width: 100vw;
+  background-image: linear-gradient(to right bottom, #0a4d68d0, #088295c9), url(./images/sl_031420_28950_10.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
@@ -296,7 +296,7 @@ html {
   position: relative;
   z-index: 30;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-  width: 100%; }
+  width: 100vw; }
   @media (max-width: 37.5em) {
     .about-section {
       clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%); } }
@@ -310,7 +310,7 @@ html {
   text-transform: uppercase;
   background-image: linear-gradient(to right, #0a4d68d0, #088295c9);
   display: inline-block;
-  -webkit-background-clip: text;
+  --webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
   transition: all .2s; }
@@ -328,7 +328,7 @@ html {
     font-weight: 700;
     text-transform: uppercase;
     background-image: linear-gradient(to right, #00FFCA, #d3d2d2);
-    -webkit-background-clip: text;
+    --webkit-background-clip: text;
     color: transparent;
     display: inline-block;
     letter-spacing: 2px;
@@ -449,7 +449,7 @@ html {
   padding: 85rem 10rem 15rem 10rem;
   margin-top: -80rem;
   position: relative;
-  width: 100%; }
+  width: 100vw; }
   @media (max-width: 56.25em) {
     .explore-codes {
       margin-left: 0rem;
@@ -575,32 +575,25 @@ html {
 
 .footer {
   background-color: #0A4D68;
-  padding: 3rem;
+  padding: 3rem 2rem 3rem 2rem;
   font-size: 1.55rem;
-  width: 100%; }
+  width: 100vw; }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
-    @media (max-width: 37.5em) {
-      .footer__logo-box {
-        position: relative;
-        right: 2.5rem; } }
   .footer__logo {
-    height: 11rem;
-    width: 40rem;
+    height: 110px;
+    width: 400px;
     border-radius: 20px; }
   .footer__navigation {
     border-top: 1px solid #cfcdcd;
     padding-top: 1rem;
     display: inline-block; }
-    @media (max-width: 37.5em) {
-      .footer__navigation {
-        width: 10rem; } }
   .footer-row {
     display: flex;
     justify-content: center;
     margin: 0;
-    gap: 7rem; }
+    gap: 35rem; }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -622,12 +615,20 @@ html {
     border-top: 1px solid #cfcdcd;
     padding-top: 1rem;
     display: inline-block;
-    list-style-type: none;
-    text-align: left; }
+    text-align: center; }
   .footer__socials_palette {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    position: absolute;
+    left: 44%;
+    margin-top: 150px; }
+
+.col-1-of-2-first {
+  align-self: flex-start;
+  margin-left: 2rem; }
+
+#dev-name {
+  text-align: center;
+  margin: 0;
+  padding: 0; }
 
 .main {
   display: flex;
@@ -645,8 +646,8 @@ html {
   gap: 0.5em; }
 
 .card1 {
-  width: 8rem;
-  height: 8rem;
+  width: 90px;
+  height: 90px;
   outline: none;
   border: none;
   background: #00FFCA;
@@ -660,8 +661,8 @@ html {
   fill: #cc39a4; }
 
 .card2 {
-  width: 8rem;
-  height: 8rem;
+  width: 90px;
+  height: 90px;
   outline: none;
   border: none;
   background: #00FFCA;
@@ -675,8 +676,8 @@ html {
   fill: #03A9F4; }
 
 .card3 {
-  width: 8rem;
-  height: 8rem;
+  width: 90px;
+  height: 90px;
   outline: none;
   border: none;
   background: #00FFCA;
@@ -690,8 +691,8 @@ html {
   fill: #0a66c2; }
 
 .card4 {
-  width: 8rem;
-  height: 8rem;
+  width: 90px;
+  height: 90px;
   outline: none;
   border: none;
   background: #00FFCA;
