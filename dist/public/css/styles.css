@@ -327,6 +327,7 @@ html {
       font-size: 2.9rem; } }
   @media (max-width: 37.5em) {
     .heading-secondary {
+      margin: 8rem 0 0 0;
       font-size: 2.5rem; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
@@ -404,7 +405,10 @@ html {
     margin-bottom: 3rem; }
 
 .composition {
-  position: absolute;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40vw; }
   .composition__photo {
     width: 65%;
@@ -425,7 +429,7 @@ html {
     @media (max-width: 75em) {
       .composition__photo--p1 {
         width: 290px;
-        left: -11rem;
+        left: -20%;
         top: 2rem; } }
     @media (max-width: 56.25em) {
       .composition__photo--p1 {
@@ -435,7 +439,7 @@ html {
     @media (max-width: 37.5em) {
       .composition__photo--p1 {
         width: 35rem;
-        left: 8rem;
+        left: calc(10% + 5vw);
         top: 7rem; } }
     @media (min-width: 112.5em) {
       .composition__photo--p2 {
@@ -449,7 +453,7 @@ html {
     @media (max-width: 75em) {
       .composition__photo--p2 {
         width: 300px;
-        left: 5rem;
+        left: 10%;
         top: 25rem; } }
     @media (max-width: 56.25em) {
       .composition__photo--p2 {
@@ -459,7 +463,7 @@ html {
     @media (max-width: 37.5em) {
       .composition__photo--p2 {
         width: 35rem;
-        left: 8rem;
+        left: calc(10% + 5vw);
         top: 40rem; } }
     .composition__photo:hover {
       outline: 15px solid #05BFDB;

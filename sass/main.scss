@@ -537,6 +537,7 @@ html{
 
     @include respond(phone)
         {
+            margin: 8rem 0 0 0;
             font-size: 2.5rem;
         }
 
@@ -654,8 +655,9 @@ html{
 }
 
 .composition{
-    // position: relative;
-    position: absolute;
+    position: relative;
+    // position: absolute;
+    @include flex-center;
     width: 40vw;
         &__photo 
         {
@@ -684,23 +686,23 @@ html{
                 @include respond(tab-landscape)
                 {
                     width: 290px;
-                    left: -11rem;
+                    left: -20%;
                     top: 2rem;
                 }
 
-                  @include respond(tab-portrait)
-                  {
-                     width: 40rem;
-                     left: 50%;
-                     top: 7rem;
-                  }
+                @include respond(tab-portrait)
+                {
+                    width: 40rem;
+                    left: 50%;
+                    top: 7rem;
+                }
 
-                 @include respond(phone)
-                 {
-                     width: 35rem;
-                     left: 8rem;
-                     top: 7rem;
-                 }
+                @include respond(phone)
+                {
+                    width: 35rem;
+                    left: calc(10% + 5vw);
+                    top: 7rem;
+                }
             }
 
             &--p2
@@ -729,23 +731,23 @@ html{
                 @include respond(tab-landscape)
                 {
                     width: 300px;
-                    left: 5rem;
+                    left: 10%;
                     top: 25rem;
                 }
 
-                  @include respond(tab-portrait)
-                  {
-                      width: 40rem;
-                      left: 50%;
-                      top: 45rem;
-                  }
+                @include respond(tab-portrait)
+                {
+                    width: 40rem;
+                    left: 50%;
+                    top: 45rem;
+                }
 
-                 @include respond(phone)
-                 {
-                     width: 35rem;
-                     left: 8rem;
-                     top: 40rem;
-                 }
+                @include respond(phone)
+                {
+                    width: 35rem;
+                    left: calc(10% + 5vw);
+                    top: 40rem;
+                }
             }
 
             &:hover
