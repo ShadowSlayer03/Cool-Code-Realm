@@ -93,6 +93,11 @@ html{
     font-size: 62.5%;
    
 
+    @include respond(desktop)
+    {
+        font-size: 75%;
+    }
+
     @include respond(tab-landscape)
     {
         font-size: 56.25%;
@@ -101,16 +106,6 @@ html{
     @include respond(tab-portrait)
     {
         font-size: 50%;
-    }
-
-    @include respond(desktop)
-    {
-        font-size: 75%;
-    }
-
-    @include respond(big-desktop)
-    {
-        font-size: 80%;
     }
 
     @include respond(phone)
@@ -494,27 +489,34 @@ html{
 
 .about-section{
     background-color: $color-light;
-    padding: 52rem 16rem 29rem 13rem;
+    padding: 52rem 10rem 29rem 14rem;
     margin-top: -50vh;
     position: relative;
     z-index: 30;
     clip-path: polygon(0 0, 100% 0,100% 90%,0 100%);
     width: 100%;
 
-    @include respond(phone)
-    {
-        clip-path: polygon(0 0, 100% 0,100% 95%,0 100%);
-    }
+    @include respond(medium-screen)
+      {
+           padding: 55rem 5rem 29rem 1rem;
+      }
 
    @include respond(tab-landscape)
       {
            padding: 60rem 5rem 29rem 3rem;
       }
 
-//  @include respond(phone)
-//      {
-//           padding: 50rem 10rem 29rem 7rem;
-//      }
+      @include respond(tab-portrait)
+    {
+        clip-path: polygon(0 0, 100% 0,100% 95%,0 100%);
+        padding: 60rem 10rem 90rem 10rem;
+    }  
+
+      @include respond(phone)
+    {
+        clip-path: polygon(0 0, 100% 0,100% 95%,0 100%);
+        padding: 52rem 10rem 80rem 9rem;
+    }
 }
 
 .heading-secondary{
@@ -576,6 +578,9 @@ html{
     max-width: $grid-width;
     margin: 0 0 0 8rem;
     color: $color-primary-dark;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
     &:not(:last-child)
     {
@@ -594,15 +599,33 @@ html{
         }
     }
 
+    @include respond(tab-portrait)
+    {
+        flex-direction: column;
+        margin: 0;
+    }
     @include respond(phone)
     {
+        flex-direction: column;
         margin: 0;
-        padding: 0;
     }
 }
 
 .col-1-of-2 {
     width: calc((100% - #{$gutter-horizontal}) / 2);
+
+    @include respond(tab-portrait)
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    @include respond(phone)
+    {
+        width: 100%;
+    }
 }
 
 
@@ -631,7 +654,9 @@ html{
 }
 
 .composition{
-    position: relative;
+    // position: relative;
+    position: absolute;
+    width: 40vw;
         &__photo 
         {
             width: 65%;
@@ -663,19 +688,19 @@ html{
                     top: 2rem;
                 }
 
-                @include respond(tab-portrait)
-                {
-                    width: 210px;
-                    left: -10rem;
-                    top: 5rem;
-                }
+                  @include respond(tab-portrait)
+                  {
+                     width: 40rem;
+                     left: 50%;
+                     top: 7rem;
+                  }
 
-                @include respond(phone)
-                {
-                    width: 230px;
-                    left: -10rem;
-                    top: 5rem;
-                }
+                 @include respond(phone)
+                 {
+                     width: 35rem;
+                     left: 8rem;
+                     top: 7rem;
+                 }
             }
 
             &--p2
@@ -708,19 +733,19 @@ html{
                     top: 25rem;
                 }
 
-                @include respond(tab-portrait)
-                {
-                    width: 210px;
-                    left: -10rem;
-                    top: 35rem;
-                }
+                  @include respond(tab-portrait)
+                  {
+                      width: 40rem;
+                      left: 50%;
+                      top: 45rem;
+                  }
 
-                @include respond(phone)
-                {
-                    width: 230px;
-                    left: -10rem;
-                    top: 45rem;
-                }
+                 @include respond(phone)
+                 {
+                     width: 35rem;
+                     left: 8rem;
+                     top: 40rem;
+                 }
             }
 
             &:hover
