@@ -8,6 +8,7 @@
   },
   "scripts": {
     "compile:sass": "node-sass sass/main.scss dist/public/css/styles.css -w"
+    "build": "CI= npm run build"
   },
   "author": "Arjun R Nambiar",
   "license": "ISC",
