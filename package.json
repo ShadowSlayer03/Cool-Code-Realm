@@ -2,7 +2,7 @@
   "name": "cool-code-realm",
   "version": "1.0.0",
   "description": "Cool Code Realm website",
-  "main": "server.js",
+  "main": "functions/server.js",
   "directories": {
     "lib": "lib"
   },
