@@ -8,13 +8,14 @@
   },
   "scripts": {
     "compile:sass": "node-sass sass/main.scss dist/public/css/styles.css -w",
-    "build":"webpack --mode production",
-    "start":"node server.js"
+    "build": "webpack --mode production",
+    "start": "node server.js"
   },
   "author": "Arjun R Nambiar",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^9.0.0"
+    "node-sass": "^9.0.0",
+    "webpack-cli": "^5.1.4"
   },
   "dependencies": {
     "aws-serverless-express": "^3.4.0",
