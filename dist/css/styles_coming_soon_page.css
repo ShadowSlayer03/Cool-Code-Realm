@@ -35,7 +35,7 @@ video.bg-video {
 
 @media (pointer: coarse) and (hover: none) {
   body {
-    background: url("../assets/img/bg-mobile-fallback.jpg") #c9901e no-repeat center center scroll;
+    background: url("/dist/images/coming_soon_page/img/bg-fallback-mobile.png") no-repeat center center scroll;
     background-size: cover;
   }
   body video {
@@ -72,10 +72,28 @@ video.bg-video {
   color: #EEEEEE;
 }
 .masthead .masthead-content h1, .masthead .masthead-content .h1 {
-  font-size: 2.5rem;
-}
+  font-size: 3.9rem;
+
+  @media (max-width:380px)
+  {
+    font-size: 2rem;
+  }
+  @media (min-width:380px) and (max-width:800px) 
+  {
+    font-size: 2.8rem;
+  }
+  }
 .masthead .masthead-content p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+
+  @media (max-width:380px)
+  {
+    font-size: 0.7rem;
+  }
+  @media (min-width:380px) and (max-width:800px) {
+    font-size: 1rem;
+  }
+
 }
 .masthead .masthead-content p strong {
   font-weight: 700;
