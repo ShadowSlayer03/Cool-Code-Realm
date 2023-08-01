@@ -151,7 +151,8 @@ html {
   z-index: 90; }
   @media (max-width: 37.5em) {
     .header {
-      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+      width: 100%; } }
 
 .condensed-logo {
   /* Set the initial size of the condensed logo */
@@ -193,7 +194,7 @@ html {
     @media (max-width: 37.5em) {
       .heading-primary-main {
         letter-spacing: 1rem;
-        font-size: 4.5rem; } }
+        font-size: 2.8rem; } }
   .heading-primary-sub {
     display: block;
     font-size: 1.8rem;
@@ -204,6 +205,7 @@ html {
     animation-timing-function: ease-out; }
     @media (max-width: 37.5em) {
       .heading-primary-sub {
+        font-size: 1.2rem;
         letter-spacing: 0.5rem; } }
 
 @keyframes moveInFromLeft {
@@ -234,6 +236,9 @@ html {
   font-size: 1.4rem;
   transition: all;
   position: relative; }
+  @media (max-width: 37.5em) {
+    .btn:link, .btn:visited {
+      font-size: 1.2rem; } }
 
 .btn:hover {
   transform: translateY(-5px);
@@ -251,6 +256,9 @@ html {
   background-color: #00FFCA;
   padding: 15px 40px;
   display: inline-block; }
+  @media (max-width: 37.5em) {
+    .btn-green {
+      padding: 12px 25px; } }
   .btn-green::after {
     background-color: #00FFCA; }
 
@@ -438,8 +446,8 @@ html {
         top: 7rem; } }
     @media (max-width: 37.5em) {
       .composition__photo--p1 {
-        width: 35rem;
-        left: calc(10% + 5vw);
+        width: 30rem;
+        left: 5%;
         top: 7rem; } }
     @media (min-width: 112.5em) {
       .composition__photo--p2 {
@@ -462,8 +470,8 @@ html {
         top: 45rem; } }
     @media (max-width: 37.5em) {
       .composition__photo--p2 {
-        width: 35rem;
-        left: calc(10% + 5vw);
+        width: 30rem;
+        left: 5%;
         top: 40rem; } }
     .composition__photo:hover {
       outline: 15px solid #05BFDB;
@@ -483,6 +491,9 @@ html {
     .explore-codes {
       margin-left: 0rem;
       padding-left: 7rem; } }
+  @media (max-width: 37.5em) {
+    .explore-codes {
+      padding: 85rem 15rem 15rem 15rem; } }
 
 .row-wrapper {
   display: flex;
@@ -523,6 +534,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 37.5em) {
+    .cards__col-1-of-2 {
+      margin: 0; } }
 
 .card {
   perspective: 240rem;
@@ -613,7 +627,7 @@ html {
     @media (max-width: 37.5em) {
       .footer__logo-box {
         position: relative;
-        right: 2.5rem; } }
+        right: 0.5rem; } }
   .footer__logo {
     height: 11rem;
     width: 40rem;
@@ -630,6 +644,9 @@ html {
     justify-content: center;
     margin: 0;
     gap: 7rem; }
+    @media (max-width: 37.5em) {
+      .footer-row {
+        gap: 3rem; } }
   .footer__list {
     list-style: none; }
   .footer__item {
