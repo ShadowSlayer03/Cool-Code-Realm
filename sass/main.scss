@@ -60,6 +60,10 @@ $gutter-vertical-small: 60px;
     {
         @media(min-width: 112.5em) { @content };               //1800 onwards
     }
+    @if $breakpoint==surface-pro-7
+    {
+        @media(min-width: 912px) { @content }
+    }
 }
 
 
@@ -511,24 +515,33 @@ html{
 
     @include respond(medium-screen)
       {
+           margin-top: -700px;
            padding: 55rem 5rem 29rem 1rem;
       }
 
    @include respond(tab-landscape)
       {
-           padding: 60rem 5rem 29rem 3rem;
+        margin-top: -600px;
+        padding: 60rem 5rem 29rem 3rem;
+      }
+
+    @include respond(surface-pro-7)
+      {
+          padding-top: 80rem;
       }
 
       @include respond(tab-portrait)
     {
+        margin-top: -200px;
         clip-path: polygon(0 0, 100% 0,100% 95%,0 100%);
-        padding: 60rem 10rem 90rem 10rem;
+        padding: 27rem 10rem 90rem 10rem;
     }  
 
       @include respond(phone)
     {
+        margin-top: -100px;
         clip-path: polygon(0 0, 100% 0,100% 95%,0 100%);
-        padding: 52rem 10rem 80rem 9rem;
+        padding: 20rem 10rem 80rem 9rem;
     }
 }
 
@@ -543,14 +556,20 @@ html{
     letter-spacing: 2px;
     transition: all .2s;
 
+    @include respond(tab-landscape)
+    {
+        padding-top: 0rem;
+    }
+
     @include respond(tab-portrait)
         {
+            padding-top: 2rem;
             font-size: 2.9rem;
         }
 
     @include respond(phone)
         {
-            margin: 8rem 0 0 0;
+            margin: 0rem 0 0 0;
             font-size: 2.5rem;
         }
 
