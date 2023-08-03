@@ -56,14 +56,16 @@ $gutter-vertical-small: 60px;
         @media(max-width: 112.5em) { @content };                  //small to 1800px
     }
 
-    @if $breakpoint==desktop
-    {
-        @media(min-width: 112.5em) { @content };               //1800 onwards
-    }
     @if $breakpoint==surface-pro-7
     {
         @media(min-width: 912px) { @content }
     }
+
+    @if $breakpoint==desktop
+    {
+        @media(min-width: 112.5em) { @content };               //1800 onwards
+    }
+    
 }
 
 
@@ -292,9 +294,14 @@ html{
     position: relative;
     z-index: 90;
 
+    @include respond(tab-portrait)
+    {
+        clip-path: polygon(0 0, 100% 0,100% 95%,0 100%);
+        width: 100%;
+    }
     @include respond(phone)
     {
-        clip-path: polygon(0 0, 100% 0,100% 85vh,0 100%);
+        clip-path: polygon(0 0, 100% 0,100% 90vh,0 100%);
         width: 100%;
     }
 }
@@ -506,40 +513,47 @@ html{
 
 .about-section{
     background-color: $color-light;
-    padding: 52rem 10rem 29rem 14rem;
+    padding: 52rem 9rem 40rem 14rem;
     margin-top: -50vh;
     position: relative;
     z-index: 30;
-    clip-path: polygon(0 0, 100% 0,100% 90%,0 100%);
+    clip-path: polygon(0 0, 100% 0,100% 92%,0 100%);
     width: 100%;
 
-    @include respond(medium-screen)
+    @include respond(desktop)   //1800+
       {
            margin-top: -700px;
-           padding: 55rem 5rem 29rem 1rem;
+           padding: 70rem 5rem 32rem 5rem;
       }
 
-   @include respond(tab-landscape)
+    @include respond(medium-screen)    //1200-1800
+      {
+           margin-top: -700px;
+           padding: 75rem 3rem 29rem 5rem;
+      }
+
+   @include respond(tab-landscape)    //900-1200
       {
         margin-top: -600px;
-        padding: 60rem 5rem 29rem 3rem;
+        padding: 70rem 5rem 29rem 3rem;
       }
 
-    @include respond(surface-pro-7)
-      {
-          padding-top: 80rem;
-      }
+    // @include respond(surface-pro-7)
+    //   {
+    //       padding-top: 70rem;
+    //       padding-bottom: 20rem;
+    //   }
 
-      @include respond(tab-portrait)
+      @include respond(tab-portrait)    //600-900
     {
         margin-top: -200px;
         clip-path: polygon(0 0, 100% 0,100% 95%,0 100%);
         padding: 27rem 10rem 90rem 10rem;
     }  
 
-      @include respond(phone)
+      @include respond(phone)     //below 600
     {
-        margin-top: -100px;
+        margin-top: -140px;
         clip-path: polygon(0 0, 100% 0,100% 95%,0 100%);
         padding: 20rem 10rem 80rem 9rem;
     }

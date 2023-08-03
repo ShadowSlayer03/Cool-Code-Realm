@@ -149,9 +149,13 @@ html {
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   position: relative;
   z-index: 90; }
+  @media (max-width: 56.25em) {
+    .header {
+      clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+      width: 100%; } }
   @media (max-width: 37.5em) {
     .header {
-      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
       width: 100%; } }
 
 .condensed-logo {
@@ -299,23 +303,24 @@ html {
 
 .about-section {
   background-color: #00FFCA;
-  padding: 52rem 10rem 29rem 14rem;
+  padding: 52rem 9rem 40rem 14rem;
   margin-top: -50vh;
   position: relative;
   z-index: 30;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
   width: 100%; }
+  @media (min-width: 112.5em) {
+    .about-section {
+      margin-top: -700px;
+      padding: 70rem 5rem 32rem 5rem; } }
   @media (max-width: 112.5em) {
     .about-section {
       margin-top: -700px;
-      padding: 55rem 5rem 29rem 1rem; } }
+      padding: 75rem 3rem 29rem 5rem; } }
   @media (max-width: 75em) {
     .about-section {
       margin-top: -600px;
-      padding: 60rem 5rem 29rem 3rem; } }
-  @media (min-width: 912px) {
-    .about-section {
-      padding-top: 80rem; } }
+      padding: 70rem 5rem 29rem 3rem; } }
   @media (max-width: 56.25em) {
     .about-section {
       margin-top: -200px;
@@ -323,7 +328,7 @@ html {
       padding: 27rem 10rem 90rem 10rem; } }
   @media (max-width: 37.5em) {
     .about-section {
-      margin-top: -100px;
+      margin-top: -140px;
       clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
       padding: 20rem 10rem 80rem 9rem; } }
 
