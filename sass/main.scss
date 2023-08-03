@@ -290,15 +290,10 @@ html{
     background-image: linear-gradient(to right bottom, #0a4d68d0, #088295c9), url(../images/sl_031420_28950_10.jpg);    
     background-size: cover;
     background-position: top;
-    clip-path: polygon(0 0, 100% 0,100% 80vh,0 100%);
+    clip-path: polygon(0 0, 100% 0,100% 85vh,0 100%);
     position: relative;
     z-index: 90;
 
-    @include respond(tab-portrait)
-    {
-        clip-path: polygon(0 0, 100% 0,100% 95%,0 100%);
-        width: 100%;
-    }
     @include respond(phone)
     {
         clip-path: polygon(0 0, 100% 0,100% 90vh,0 100%);
@@ -513,11 +508,11 @@ html{
 
 .about-section{
     background-color: $color-light;
-    padding: 52rem 9rem 40rem 14rem;
+    padding: 52rem 10rem 40rem 14rem;
     margin-top: -50vh;
     position: relative;
     z-index: 30;
-    clip-path: polygon(0 0, 100% 0,100% 92%,0 100%);
+    clip-path: polygon(0 0, 100% 0,100% 95%,0 100%);
     width: 100%;
 
     @include respond(desktop)   //1800+
@@ -535,7 +530,7 @@ html{
    @include respond(tab-landscape)    //900-1200
       {
         margin-top: -600px;
-        padding: 70rem 5rem 29rem 3rem;
+        padding: 77rem 5rem 24rem 3rem;
       }
 
     // @include respond(surface-pro-7)
@@ -547,15 +542,15 @@ html{
       @include respond(tab-portrait)    //600-900
     {
         margin-top: -200px;
-        clip-path: polygon(0 0, 100% 0,100% 95%,0 100%);
+        clip-path: polygon(0 0, 100% 0,100% 96%,0 100%);
         padding: 27rem 10rem 90rem 10rem;
     }  
 
       @include respond(phone)     //below 600
     {
         margin-top: -140px;
-        clip-path: polygon(0 0, 100% 0,100% 95%,0 100%);
-        padding: 20rem 10rem 80rem 9rem;
+        clip-path: polygon(0 0, 100% 0,100% 98%,0 100%);
+        padding: 27rem 10rem 80rem 9rem;
     }
 }
 
