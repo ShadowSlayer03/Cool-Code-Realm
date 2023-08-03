@@ -121,12 +121,37 @@ video.bg-video {
     font-size: 1.75rem;
   }
 }
-@media (min-width: 1280px) {
+
+@media (min-width: 992px) and (max-width: 1280px) {
+  .masthead {
+    height: 100%;
+    width: 75%
+  }
+  .masthead:before {
+    transform: skewX(-9deg);
+    transform-origin: top right;
+  }
   .masthead .masthead-content h1, 
   .masthead .masthead-content .h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .masthead .masthead-content p {
-    font-size: 1.25rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .masthead{
+    height: 100%;
+    width: 70%
+  }
+  .masthead .masthead-content h1, 
+  .masthead .masthead-content .h1 {
+    font-size: 3rem;
+    margin-left: 5rem;
+  }
+  .masthead .masthead-content p {
+    font-size: 1.5rem;
+    margin-left: 5rem;
   }
 }
