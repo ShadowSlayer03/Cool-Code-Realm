@@ -308,11 +308,11 @@ html {
   @media (min-width: 112.5em) {
     .about-section {
       margin-top: -700px;
-      padding: 70rem 5rem 32rem 5rem; } }
+      padding: 75rem 2rem 32rem 5rem; } }
   @media (max-width: 112.5em) {
     .about-section {
       margin-top: -700px;
-      padding: 75rem 3rem 29rem 5rem; } }
+      padding: 75rem 2rem 29rem 5rem; } }
   @media (max-width: 75em) {
     .about-section {
       margin-top: -600px;
